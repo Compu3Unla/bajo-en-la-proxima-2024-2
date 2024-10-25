@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*.ibm-plex-sans-regular {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.ibm-plex-sans-semibold {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.ibm-plex-sans-bold {
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --azul: #002A54;
+    --rojo: #FF0006;
+    --amarillo: #FEB500;
+    --hueso: #E9E9E9;
+    --celeste: #0096C3;
+
+
+/* fonts */
+
+h1{
+    font-size: 100px;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+}
+h2{
+    font-size: 70px;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+}
+h3{
+    font-size: 50px;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+}
+h4{
+    font-size: 30px;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+}
+h5{
+    font-size: 24px;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+}
+p{
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #002A54;
+    height: 111px;
+    padding: 25.329px 55.724px;
+    gap: 10.132px;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1 0 0;
+    height: 51px;
+}
+
+header a {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    color: #002A54;
+    text-decoration: none;
+}
+
+header button {
+    background-color: #FEB500;
+    box-shadow: 3px 4px 0px 0px #E22522;
+    border: 0px;
+    border-radius: 15px;
+    padding: 5px 25px;
+}
+
+.button-nav {
+    display: flex;
+    justify-content: right; 
+    border: 0px;
+    border-radius: 15px;
+    padding: 3px 25px;
+    gap: 20px;
+}
+button:hover {
+    box-shadow: 5px 6px 0px 0px #E22522;
+}
+
+/* MAIN */
+
+/*GALERIA PAGE */
+.bienvenida-galeria {
+    height: 717px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("banner/banner_10.jpg") lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenida-galeria div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1600px;
+    background-color: #002A54;
+    border: 0px;
+    border-radius: 30px;
+    color: white;
+}
+
+.categorias {
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.flechita-galeria {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.flechita-galeria.back {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.dropbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002A54;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    color: white;
+    padding: 16px;
+    box-shadow: 0px 0px 0px 6px #FEB500;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover {
+    background-color: #002A54;
+    box-shadow: 5px 6px 0px 0px #E22522;
+  }
+  
+  .dropdown {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+    
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #002A54;
+    width: auto;
+    z-index: 1;
+  }
+  
+  .show {
+    display: inline-grid;
+    grid-template-columns: 320px 320px 320px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info {
+    position: relative;
+    bottom: 0;
+    left: -319.6px;
+    background-color: rgb(0, 42, 54, 0.75);
+    overflow: hidden;
+    height: 0;
+    width: 313px;
+    transition: .5s ease;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-item {
+    display: inline-grid;
+    place-items: center;
+    grid-template-columns: 320px 320px 320px;
+}
+
+.grid-item:hover .info {
+    height: 223px;
+}
+
+/*.show:hover .info {
+    opacity: 50%;
+  }*/
+
+/*armar para que use javascript como el de dropdown podria funcionar sin tanto quilombo*/
+
+@media screen and (max-width=1200px) {
+    header {
+        height: 91px;
+    }
+}
+
+/*BLOG PAGE*/
+
+.bienvenida-blog {
+    height: 717px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_zonablog.jpg") lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenida-blog div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1600px;
+    background-color: #002A54;
+    border: 0px;
+    border-radius: 30px;
+    color: var(--Amarillo, #FEB500);
+    text-align: center;
+    text-shadow: 4px 2px 0px #E52522;
+}
+
+#blog {
+    display: flex;
+    width: 1752px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 111px 52px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    color: #E9E9E9;
+    background-color: #E9E9E9;
+}
+
+.blog {
+    width: 1922px;
+    height: 836.004px;
+    flex-shrink: 0;
+}
+
+#blog img {
+    width: 471.777px;
+    height: 695.25px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/nota1.jpg") lightgray 50% / cover no-repeat;
+}
+
+.botonablog  {
+    display: flex;
+    padding: 2px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    line-height: 33px; /* 137.5% */
+}
+
+/*MAPA PAGE*/
+.mapa {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    }
+
+/* FOOTER */
+footer {
+    display: flex;
+    width: 1925px;
+    height: 206px;
+    padding: 0px 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 442px;
+    flex-shrink: 0;
+    background-color: var(--azul);
+}
+footer ol li {
+    color: #E9E9E9;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 24px;
+}
