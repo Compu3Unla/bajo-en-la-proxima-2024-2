@@ -225,18 +225,6 @@ button:hover {
     height: 223px;
 }
 
-/*.show:hover .info {
-    opacity: 50%;
-  }*/
-
-/*armar para que use javascript como el de dropdown podria funcionar sin tanto quilombo*/
-
-@media screen and (max-width=1200px) {
-    header {
-        height: 91px;
-    }
-}
-
 /*BLOG PAGE*/
 
 .bienvenida-blog {
@@ -324,4 +312,63 @@ footer ol li {
     color: #E9E9E9;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 24px;
+}
+
+@media screen and (max-width=600px) {
+	/*SI USAMOS EL HEADER DE DANI, ACÁ YA ESTÁ AJUSTADO PARA QUE FUNCIONE EN MOBILE*/
+    #logo {
+        width: 50%;
+        height: 50%;
+        margin-top: 0px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    .mobile {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+      }
+    /*SI NO LO USAMOS DE ACÁ PARA ARRIBA SE PUEDE MODIFICAR/BORRAR DE SER NECESARIO*/
+    body {
+        width: 100vw;
+    }
+
+    .bienvenida-galeria {
+        height: 280px;
+    }
+    
+    .bienvenida-galeria h2 {
+        font-size: 30px;
+    }
+
+    .bienvenida-galeria h3 {
+        font-size: 20px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+    .info h4 {
+        font-size: 15px;
+    }
+
+    #interiorfooter {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .dropbtn {
+        font-size: 18px;
+    }
+
+    .flechita-galeria {
+        height: 20%;
+        width: 20%;
+    }
 }
