@@ -492,6 +492,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .bienvenida-galeria div {
@@ -506,11 +507,6 @@ body{
     color: white;
 }
 
-#blogpage {
-    background-color: --hueso #E9E9E9;
-    padding: 80px 40px;
-}
-
 .categorias {
     background-color: #D9D9D9;
     display: flex;
@@ -519,6 +515,7 @@ body{
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    padding-bottom: 70px;
 }
 
 .flechita-galeria {
@@ -547,28 +544,28 @@ body{
     box-shadow: 0px 0px 0px 6px #FEB500;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.dropbtn:hover {
+  }
+  
+  .dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #E22522;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     position: relative;
     width: 100%;
     display: inline-block;
-}
+  }
     
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: relative;
     background-color: #002A54;
     width: auto;
     z-index: 1;
-}
-
-.show {
+  }
+  
+  .show {
     display: inline-grid;
     grid-template-columns: 320px 320px 320px;
     width: 100%;
