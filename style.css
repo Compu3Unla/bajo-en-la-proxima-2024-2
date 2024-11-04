@@ -143,6 +143,36 @@ span.button:active {
     transform: translateY(2px);
     border-bottom: 5px solid var(--rojo);
 }
+
+/*nav ajustado para mobile*/
+.botonnav {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .mobile {
+    display: none;
+  }
+    
+  .listanav {
+    display: none;
+    position: relative;
+    background-color: #002A54;
+    width: auto;
+    z-index: 1;
+  }
+  
+  .mostrarnav {
+    display: inline-grid;
+    grid-template-columns: 320px 320px 320px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+/*fin de nav mobile*/
+
 /*Daniiiiiiiiiiiii indexxxxxxxxxxxxxxxxxxxxxxx*/
 .container {
     position: relative;
