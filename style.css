@@ -1,5 +1,6 @@
 @charset "utf-8";
 /*CSS Document*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -523,13 +524,145 @@ footer li{
 .grid-item:hover .info {
     height: 223px;
 }
+/*danifin*/
+/*BLOG PAGE*/
 
+.bienvenida-blog {
+    height: 717px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_zonablog.jpg") lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenida-blog div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1200px;
+    background-color: #002A54;
+    border: 0px;
+    border-radius: 30px;
+    color: white;
+}
+
+.bienvenida-blog div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1600px;
+    background-color: #002A54;
+    border-radius: 30px;
+    color: var(--Amarillo, #FEB500);
+    text-align: center;
+    text-shadow: 4px 2px 0px #E52522;
+}
+
+#blog {
+    display: flex;
+    width: 1752px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 111px 52px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    color: #E9E9E9;
+    background-color: #E9E9E9;
+}
+
+.blog {
+    width: 1922px;
+    height: 836.004px;
+    flex-shrink: 0;
+}
+
+#blog img {
+    width: 471.777px;
+    height: 695.25px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/nota1.jpg") lightgray 50% / cover no-repeat;
+}
+
+/*MAPA PAGE*/
+.mapa {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    }
+
+ol{
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+    color: var(--hueso);
+}
+#interiorfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    padding: 70px 2.19vw;
+}
+li{
+    list-style-type: none;
+}
+#redessociales{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.19vw;
+}
+#lineas{
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    width: 100%;
+    z-index: 3; 
+}
+@media only screen and (max-width: 1366px){
+    .imgnotas {
+        width: 95%;
+        height: auto;
+    }
+    .botonablog {
+        padding: 8px 16px;
+    }
+    #infonotaindex{
+        width: 95%;
+        height: auto;
+    }
+    #historianosotros {
+        margin: 2%;
+    }
+    #img {
+        display: flex;
+    }
+    .infonotaindex {
+        bottom: 110px;
+        width: 95%;
+    }
+    #img1{
+        width: 55%;
+        height: auto;
+    }
+    #img2 {
+        width: 40%;
+        height: 100%;
+    }
+    label, 
+    #enviar {
+        font-size: 18px; 
+    }
+}
 @media screen and (max-width: 600px) {
 
     nav div {
         display: none;
     }
-
     .mobile {
         position: relative;
         width: 100%;
@@ -740,138 +873,4 @@ p {
         height: 50px; 
         object-fit: cover; 
     }
-}
-@media only screen and (max-width: 1366px){
-    .imgnotas {
-        width: 95%;
-        height: auto;
-    }
-    .botonablog {
-        padding: 8px 16px;
-    }
-    #infonotaindex{
-        width: 95%;
-        height: auto;
-    }
-    #historianosotros {
-        margin: 2%;
-    }
-    #img {
-        display: flex;
-    }
-    .infonotaindex {
-        bottom: 110px;
-        width: 95%;
-    }
-    #img1{
-        width: 55%;
-        height: auto;
-    }
-    #img2 {
-        width: 40%;
-        height: 100%;
-    }
-    label, 
-    #enviar {
-        font-size: 18px; 
-    }
-}
-/*danifin*/
-/*BLOG PAGE*/
-
-.bienvenida-blog {
-    height: 717px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_zonablog.jpg") lightgray 50% / cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bienvenida-blog div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 24px 43px;
-    width: 1200px;
-    background-color: #002A54;
-    border: 0px;
-    border-radius: 30px;
-    color: white;
-}
-
-.bienvenida-blog div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 24px 43px;
-    width: 1600px;
-    background-color: #002A54;
-    border-radius: 30px;
-    color: var(--Amarillo, #FEB500);
-    text-align: center;
-    text-shadow: 4px 2px 0px #E52522;
-}
-
-#blog {
-    display: flex;
-    width: 1752px;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 111px 52px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    color: #E9E9E9;
-    background-color: #E9E9E9;
-}
-
-.blog {
-    width: 1922px;
-    height: 836.004px;
-    flex-shrink: 0;
-}
-
-#blog img {
-    width: 471.777px;
-    height: 695.25px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 30px 30px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/nota1.jpg") lightgray 50% / cover no-repeat;
-}
-
-/*MAPA PAGE*/
-.mapa {
-    width: 80%;
-    height: 400px;
-    margin: 20px auto;
-    }
-
-ol{
-    font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 400;
-    font-size: 20px;
-    color: var(--hueso);
-}
-#interiorfooter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
-    padding: 70px 2.19vw;
-}
-li{
-    list-style-type: none;
-}
-#redessociales{
-    display: flex;
-    justify-content: space-between;
-    gap: 2.19vw;
-}
-#lineas{
-    position: absolute;
-    top: -50px; 
-    left: 0;
-    width: 100%;
-    z-index: 3; 
 }
