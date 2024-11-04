@@ -1,21 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-
-/*.ibm-plex-sans-regular {
-	font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.ibm-plex-sans-semibold {
-	font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-.ibm-plex-sans-bold {
-	font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-}*/
 *{
     margin: 0px;
     padding: 0px;
@@ -60,52 +43,11 @@ p {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-/* HEADER       puse el nav*/
-/* header {
-    background-color: #002A54;
-    height: 111px;
-    padding: 25.329px 55.724px;
-    gap: 10.132px;
-    display: flex;
-    align-items: center;
+body {
+    cursor: url(img/cursor.svg),auto;
 }
 
-header nav {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex: 1 0 0;
-    height: 51px;
-}
-
-header a {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 26px;
-    color: #002A54;
-    text-decoration: none;
-}
-
-header button {
-    background-color: #FEB500;
-    box-shadow: 3px 4px 0px 0px #E22522;
-    border: 0px;
-    border-radius: 15px;
-    padding: 5px 25px;
-}
-
-.button-nav {
-    display: flex;
-    justify-content: right; 
-    border: 0px;
-    border-radius: 15px;
-    padding: 3px 25px;
-    gap: 20px;
-}
-button:hover {
-    box-shadow: 5px 6px 0px 0px #E22522;
-}*/
+*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -114,7 +56,6 @@ nav{
     background-color: var(--azul);
     width: 100%;
     height: 8.12vw;
-
 }
 #logo{
     margin-top: 3.66vw;
@@ -143,42 +84,13 @@ span.button:active {
     transform: translateY(2px);
     border-bottom: 5px solid var(--rojo);
 }
-
-/*nav ajustado para mobile*/
-.botonnav {
-    display: block;
-    cursor: pointer;
-  }
-  
-  .mobile {
-    display: none;
-  }
-    
-  .listanav {
-    display: none;
-    position: relative;
-    background-color: #002A54;
-    width: auto;
-    z-index: 1;
-  }
-  
-  .mostrarnav {
-    display: inline-grid;
-    grid-template-columns: 320px 320px 320px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-/*fin de nav mobile*/
-
 /*Daniiiiiiiiiiiii indexxxxxxxxxxxxxxxxxxxxxxx*/
 .container {
     position: relative;
     width: 100%;
     max-width: 1920px;
     height: auto;
+    padding: 0%;
 }
 #video {
     width: 100%;
@@ -210,6 +122,7 @@ span.button:active {
     color: var(--hueso);
     text-shadow: 2px 2px 0 var(--celeste);
 }
+
 /*------------------------------*/
 /*index galería*/
 #galeriacarruselin{
@@ -398,8 +311,8 @@ span.button:active {
     background-color: var(--azul);
     padding: 50px ;
     border-radius: 2.19vw;
-    width: 800px;
-    height: 690px;
+    width: 50%;
+    height: 60%;
 }
 legend {
     font-family: "IBM Plex Sans", sans-serif;
@@ -419,6 +332,14 @@ input{
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 400;
     color: var(--azul);
+}
+.form-control{
+    width: 65%;
+}
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
 }
 #enviar{
     color: var(--azul);
@@ -479,20 +400,16 @@ footer li{
     width: 100%;
     z-index: 3; 
 }
-body{
-    cursor: url(img/cursor.svg), auto;
-}
 /*--------dani-------------------------------------------------------------------*/
 /* MAIN */
 
 /*GALERIA PAGE */
 .bienvenida-galeria {
     height: 717px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_10.jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("banner/banner_10.jpg") lightgray 50% / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .bienvenida-galeria div {
@@ -507,15 +424,19 @@ body{
     color: white;
 }
 
+#blogpage {
+    background-color: --hueso #E9E9E9;
+    padding: 106px 40px 106px 106px;
+}
+
 .categorias {
     background-color: #D9D9D9;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 111px 52px;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    padding-bottom: 70px;
 }
 
 .flechita-galeria {
@@ -544,28 +465,28 @@ body{
     box-shadow: 0px 0px 0px 6px #FEB500;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
-  .dropbtn:hover {
+}
+
+.dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #E22522;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     width: 100%;
     display: inline-block;
-  }
+}
     
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: relative;
     background-color: #002A54;
     width: auto;
     z-index: 1;
-  }
-  
-  .show {
+}
+
+.show {
     display: inline-grid;
     grid-template-columns: 320px 320px 320px;
     width: 100%;
@@ -603,11 +524,6 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-    #logo {
-        width: 50%;
-        height: 50%;
-        margin-top: 0px;
-    }
 
     nav div {
         display: none;
@@ -646,8 +562,8 @@ body{
     #interiorfooter {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
+        gap: 30px;
+        align-items: center;
     }
 
     .dropbtn {
@@ -668,12 +584,13 @@ body{
         width: 80px;
     }
     #video {
-        height: auto; 
+        content: url(img/banner-index-600.jpg);
     }
-    #tituloh1 {
+    #tituloh1in {
         font-size: 6vw; 
         padding: 8px 16px; 
         border-radius: 4vw; 
+        text-shadow: 2px 2px 0 var(--celeste);
     }
     #subtitulo {
         font-size: 3vw; 
@@ -724,6 +641,18 @@ body{
         font-size: 3.5vw;
     }
 /*----------------------------------------------------------------*/
+/**/
+#infomapain{
+    width: 80%;
+}
+#blogin{
+    display: flex;
+    flex-direction: column;
+}
+.infonotaindex{
+    bottom: 276px;
+}
+/**/
 #historianosotros {
     flex-direction: column;
     align-items: center;
@@ -752,14 +681,11 @@ p {
 .formulario-sobre-imagen {
     width: 90%; 
     height: auto;
-    padding: 20px; 
+    padding: 30px; 
     left: 5%; 
     right: 5%;
     top: 10%; 
     transform: translateY(0); 
-    }
-    .formulario-con-imagen img {
-        max-height: 250px; 
     }
     legend {
         font-size: 24px; 
@@ -770,10 +696,6 @@ p {
         font-size: 16px; 
     }
 /*------------------------*/
-    #interiorfooter {
-        flex-direction: column; 
-        gap: 30px;
-    }
     #redessociales {
         justify-content: center; 
     }
@@ -819,10 +741,6 @@ p {
     }
 }
 @media only screen and (max-width: 1366px){
-    #logo{
-        width: 200px; 
-        height: auto;
-    }
     .imgnotas {
         width: 95%;
         height: auto;
@@ -837,15 +755,12 @@ p {
     #historianosotros {
         margin: 2%;
     }
-    #infonosotros {
-        padding: 80px 30px;
-        max-width: 30%;
-    }
     #img {
         display: flex;
     }
     .infonotaindex {
         bottom: 110px;
+        width: 95%;
     }
     #img1{
         width: 55%;
@@ -854,14 +769,6 @@ p {
     #img2 {
         width: 40%;
         height: 100%;
-    }
-    .formulario-sobre-imagen {
-        width:700px;
-        height: auto; 
-        padding: 30px; 
-    }
-    legend {
-        font-size: 45px; 
     }
     label, 
     #enviar {
@@ -884,9 +791,20 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
-    width: 1600px;
+    width: 1200px;
     background-color: #002A54;
     border: 0px;
+    border-radius: 30px;
+    color: white;
+}
+
+.bienvenida-blog div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1600px;
+    background-color: #002A54;
     border-radius: 30px;
     color: var(--Amarillo, #FEB500);
     text-align: center;
@@ -920,19 +838,6 @@ p {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/nota1.jpg") lightgray 50% / cover no-repeat;
 }
 
-.botonablog  {
-    display: flex;
-    padding: 2px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 31px;
-    border-radius: 10px;
-    border: 1px solid #FFF;
-    color: #FFF;
-    text-align: center;
-    line-height: 33px; /* 137.5% */
-}
-
 /*MAPA PAGE*/
 .mapa {
     width: 80%;
@@ -940,12 +845,6 @@ p {
     margin: 20px auto;
     }
 
-/* FOOTER */
-/*footer{       hay arriba
-    background-color: var(--azul);
-    position: relative;
-    z-index: 2;
-}
 ol{
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 400;
@@ -974,4 +873,4 @@ li{
     left: 0;
     width: 100%;
     z-index: 3; 
-}*/
+}
