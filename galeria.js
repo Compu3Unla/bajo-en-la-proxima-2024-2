@@ -1,4 +1,3 @@
-/*esto idealmente tendría que ir en el js de Dani, así todas linkean al index y no a la galeria que queda medio raro*/
 function nav() {
   document.getElementById("navabierto").classList.toggle("mostrarnav");
 }
@@ -14,7 +13,6 @@ window.onclick = function(event) {
     }
   }
 }
-/*hasta aca -- esto es para el boton del nav en mobile*/
 
 function dropdown() {
   document.getElementById("cincuentas").classList.toggle("show");
