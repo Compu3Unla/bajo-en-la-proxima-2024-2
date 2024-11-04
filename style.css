@@ -27,42 +27,41 @@
     --amarillo: #FEB500;
     --hueso: #E9E9E9;
     --celeste: #0096C3;
-
+}
 
 /* fonts */
+h1 {
+    font-size: 5.21vw;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+}
+h2 {
+    font-size: 3.65vw; 
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+}
+h3 {
+    font-size: 2.60vw; 
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+}
+h4 {
+    font-size: 1.56vw;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+}
+h5 {
+    font-size: 1.25vw; 
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+}
+p {
+    font-size: 1.1vw; 
+    font-family: "IBM Plex Sans", sans-serif;
+}
 
-h1{
-    font-size: 100px;
-    font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 600;
-}
-h2{
-    font-size: 70px;
-    font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 600;
-}
-h3{
-    font-size: 50px;
-    font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 600;
-}
-h4{
-    font-size: 30px;
-    font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 600;
-}
-h5{
-    font-size: 24px;
-    font-family: "IBM Plex Sans", sans-serif;
-	font-weight: 600;
-}
-p{
-    font-size: 20px;
-    font-family: "IBM Plex Sans", sans-serif;
-}
-
-/* HEADER */
-header {
+/* HEADER       puse el nav*/
+/* header {
     background-color: #002A54;
     height: 111px;
     padding: 25.329px 55.724px;
@@ -106,8 +105,354 @@ header button {
 }
 button:hover {
     box-shadow: 5px 6px 0px 0px #E22522;
+}*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5% ;
+    background-color: var(--azul);
+    width: 100%;
+    height: 8.12vw;
+
+}
+#logo{
+    margin-top: 3.66vw;
+    z-index: 1000;
+    
+}
+span{
+    display: inline-block;
+    color: var(--azul);
+    border-radius: 1.10vw;
+    padding: 0.35vw 2.34vw;
+    background-color: var(--amarillo);
+    box-sizing: border-box;
+    font-size: 1.25vw;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight:600 ;
+    list-style: none;
+    border: none;
+    border-bottom:0.37vw solid var(--rojo);
+    transition: all 0.2s ease;  
+}
+span.button:hover {
+    transform: translateY(-5px); 
+}
+span.button:active {
+    transform: translateY(2px);
+    border-bottom: 5px solid var(--rojo);
+}
+/*Daniiiiiiiiiiiii indexxxxxxxxxxxxxxxxxxxxxxx*/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+}
+#video {
+    width: 100%;
+    height: auto;
+    z-index: 1; 
+    display: block; 
+    object-fit: cover;
+}
+.text-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+#tituloh1in{
+    color: var(--azul);
+    background-color: var(--hueso);
+    padding: 10px 20px;
+    border-radius: 2.19vw;
+    display: block;
+    white-space: nowrap;
+    text-shadow: 3px 3px 0 var(--celeste);
+}
+#subtituloin{
+    color: var(--hueso);
+    text-shadow: 2px 2px 0 var(--celeste);
+}
+/*------------------------------*/
+/*index galería*/
+#galeriacarruselin{
+    background-color: var(--celeste);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+#titulogaleriain{
+    color: var(--azul);
+    margin-bottom: 2%;
+}
+.bondis{
+    margin-top: 5%;
+    color: var(--amarillo);
+    text-shadow: 2px 2px 0 var(--azul);
+    font-size: 3.65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botongrande{
+    background-color: var(--azul);
+    border-radius: 1.10vw;
+    color: var(--hueso);
+    padding: 10px 20px;
+    font-size: 2.08vw;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.botongrande:hover {
+    background-color: var(--hueso); 
+    color: var(--azul); 
+}
+.carrusel{
+    border-radius: 2.19vw;
+    box-shadow: 0px 5px 0px 5px var(--amarillo);
+}
+.carousel-indicators{
+    position: relative;
+}
+/*------------------------*/
+/*indexmapa*/
+#mapaindex{
+    display: flex;
+    align-items: center;
+}
+#titulomapain{
+    color: var(--celeste);
+}
+#textomapain{
+    color: var(--azul);
+}
+.botonarutas{
+    color: var(--hueso);
+    background-color: var(--azul);
+    border-radius: 1.10vw;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 600;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.botonarutas:hover {
+    background-color: var(--hueso); 
+    color: var(--azul); 
 }
 
+#infomapain{
+    width: 25%; 
+    margin: 2.19vw;
+} 
+#mapaindex img {
+    width: 75%; 
+    height: auto;
+
+}
+/*--------------*/
+/*blogindex*/
+#blogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#blogindex{
+    background-color: var(--amarillo);
+    padding: 80px 40px;
+}
+.indexnota {
+    position: relative; 
+    width: 466px;
+    height: 695px; 
+}
+.imgnotas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0px 0px 30px 30px;
+}
+.infonotaindex {
+    position: absolute;
+    bottom:0; 
+    left: 0;
+    z-index: 2; 
+    color: white;
+    padding: 40px;
+    gap: 60px;
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+    background: var(--Degradado-Blog, linear-gradient(180deg, rgba(102, 102, 102, 0.00) 0%, rgba(0, 0, 0, 0.81) 69%));
+}
+.descri{
+    margin: 20px 0 20px 0;
+}
+.botonablog{
+    color: var(--hueso);
+    border: 2px solid var(--hueso);
+    border-radius: 1.10vw;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+    padding: 5px 1.10vw;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.botonablog:hover{
+    border: 2px solid var(--celeste); 
+    color: var(--celeste); 
+}
+/*---------------------------------*/
+/*nosotros*/
+.nosotros{
+    background-color: var(--azul);
+    padding: 60px 2.19vw;
+}
+#historianosotros{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+#infonosotros{
+    color: var(--azul);
+    background-color: var(--hueso);
+    border-radius: 2.19vw;
+    padding: 100px 40px;
+    max-width: 30%;
+}
+
+#img1{
+    border-radius: 2.19vw;
+}
+#img2{
+    border-radius: 2.19vw;
+}
+/*-----------------------------*/
+/*formulario*/
+.formulario-con-imagen {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    z-index: 1;
+}
+
+.formulario-con-imagen img {
+    width: 100%;
+    height: auto;
+}
+.formulario-sobre-imagen {
+    position: absolute; 
+    top: 50%; 
+    right: 5%;
+    transform: translateY(-50%); 
+    background-color: var(--azul);
+    padding: 50px ;
+    border-radius: 2.19vw;
+    width: 800px;
+    height: 690px;
+}
+legend {
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: var(--hueso);
+    text-shadow: 2px 2px 0 var(--celeste);
+}
+label{
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+    color: var(--hueso);
+}
+input{
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+    color: var(--azul);
+}
+#enviar{
+    color: var(--azul);
+    border-radius: 1.10vw;
+    padding: 5px 2.19vw;
+    background-color: var(--amarillo);
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight:600;
+    border-bottom: 5px solid var(--rojo);
+    transition: all 0.2s ease; 
+    display: block;
+    margin: 20px auto 0;
+}
+#enviar:hover {
+    transform: translateY(-5px); 
+}
+#enviar:active {
+    transform: translateY(2px);
+    border-bottom: 5px solid var(--rojo);
+}
+#lineas{
+    z-index: 100;
+}
+/*--------------------------------*/
+footer{
+    background-color: var(--azul);
+    position: relative;
+    z-index: 2;
+}
+footer ol{
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+    color: var(--hueso);
+}
+#interiorfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    padding: 70px 2.19vw;
+}
+footer li{
+    list-style-type: none;
+}
+#redessociales{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.19vw;
+}
+#lineas {
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    width: 100%;
+    z-index: 3; 
+}
+body{
+    cursor: url(img/cursor.svg), auto;
+}
+/*--------dani-------------------------------------------------------------------*/
 /* MAIN */
 
 /*GALERIA PAGE */
@@ -129,6 +474,11 @@ button:hover {
     border: 0px;
     border-radius: 30px;
     color: white;
+}
+
+#blogpage {
+    background-color: --hueso #E9E9E9;
+    padding: 80px 40px;
 }
 
 .categorias {
@@ -167,28 +517,28 @@ button:hover {
     box-shadow: 0px 0px 0px 6px #FEB500;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
-  .dropbtn:hover {
+}
+
+.dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #E22522;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     width: 100%;
     display: inline-block;
-  }
+}
     
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: relative;
     background-color: #002A54;
     width: auto;
     z-index: 1;
-  }
-  
-  .show {
+}
+
+.show {
     display: inline-grid;
     grid-template-columns: 320px 320px 320px;
     width: 100%;
@@ -225,6 +575,273 @@ button:hover {
     height: 223px;
 }
 
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 50%;
+        height: 50%;
+        margin-top: 0px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    .mobile {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    body {
+        width: 100vw;
+    }
+
+    .bienvenida-galeria {
+        height: 280px;
+    }
+    
+    .bienvenida-galeria h2 {
+        font-size: 30px;
+    }
+
+    .bienvenida-galeria h3 {
+        font-size: 20px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+    .info h4 {
+        font-size: 15px;
+    }
+
+    #interiorfooter {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .dropbtn {
+        font-size: 18px;
+    }
+
+    .flechita-galeria {
+        height: 20%;
+        width: 20%;
+    }
+
+    /*dani---*/
+    .text-content {
+        margin-bottom: 0px; 
+    }
+    #logo {
+        margin-top: 10px;
+        width: 80px;
+    }
+    #video {
+        height: auto; 
+    }
+    #tituloh1 {
+        font-size: 6vw; 
+        padding: 8px 16px; 
+        border-radius: 4vw; 
+    }
+    #subtitulo {
+        font-size: 3vw; 
+    }
+/*----------------------------*/
+    #galeriacarrusel {
+        padding: 10px;
+    }
+
+    .bondis {
+        font-size: 5vw; 
+        margin-top: 5%;
+        font-size: 6vw;
+        text-shadow: 2px 2px 0 var(--azul);
+    }
+
+    .botongrande {
+        font-size: 4vw; 
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-bottom: 3%;
+    }
+
+    .carrusel {
+        width: 100%; 
+        height: auto; 
+        border-radius: 4vw; 
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    /*---------------*/
+    #blog {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .indexnota {
+        width: 100%;
+    }
+    .botonablog {
+        font-size: 3.5vw;
+        padding: 8px 16px;
+    }
+        h4{
+        font-size: 4vw;
+    }
+    .descri{
+        font-size: 3.5vw;
+    }
+/*----------------------------------------------------------------*/
+#historianosotros {
+    flex-direction: column;
+    align-items: center;
+}
+#infonosotros {
+    max-width: 90%; 
+    padding: 30px;
+    text-align: center;
+}
+h3 {
+    font-size: 5vw; 
+}
+p {
+    font-size: 3vw; 
+}
+#img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#img1,
+#img2 {
+    display: none;
+}
+/*-----------------*/
+.formulario-sobre-imagen {
+    width: 90%; 
+    height: auto;
+    padding: 20px; 
+    left: 5%; 
+    right: 5%;
+    top: 10%; 
+    transform: translateY(0); 
+    }
+    .formulario-con-imagen img {
+        max-height: 250px; 
+    }
+    legend {
+        font-size: 24px; 
+    }
+
+    label, 
+    #enviar {
+        font-size: 16px; 
+    }
+/*------------------------*/
+    #interiorfooter {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    #redessociales {
+        justify-content: center; 
+    }
+    #mapaindex {
+        flex-direction: column-reverse; 
+        align-items: center; 
+        text-align: center;
+    }
+    #infomapa {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+    #mapaindex img {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .botonarutas {
+        font-size: 3vw;
+        padding: 12px 24px; 
+        border-radius: 3vw; 
+    }
+    #textomapa{
+        font-size: 4vw;
+    }
+    #titulomapa{
+        font-size: 6vw;
+    }
+    #fondoform {
+        content: url("img/formulario600.jpg");
+        width: 100%; 
+        height: auto;
+    }
+    #footer {
+        position: relative;
+        padding-top: 20px; 
+    }
+    
+    #lineas {
+        width: 100%; 
+        height: 50px; 
+        object-fit: cover; 
+    }
+}
+@media only screen and (max-width: 1366px){
+    #logo{
+        width: 200px; 
+        height: auto;
+    }
+    .imgnotas {
+        width: 95%;
+        height: auto;
+    }
+    .botonablog {
+        padding: 8px 16px;
+    }
+    #infonotaindex{
+        width: 95%;
+        height: auto;
+    }
+    #historianosotros {
+        margin: 2%;
+    }
+    #infonosotros {
+        padding: 80px 30px;
+        max-width: 30%;
+    }
+    #img {
+        display: flex;
+    }
+    .infonotaindex {
+        bottom: 110px;
+    }
+    #img1{
+        width: 55%;
+        height: auto;
+    }
+    #img2 {
+        width: 40%;
+        height: 100%;
+    }
+    .formulario-sobre-imagen {
+        width:700px;
+        height: auto; 
+        padding: 30px; 
+    }
+    legend {
+        font-size: 45px; 
+    }
+    label, 
+    #enviar {
+        font-size: 18px; 
+    }
+}
+/*danifin*/
 /*BLOG PAGE*/
 
 .bienvenida-blog {
@@ -297,78 +914,37 @@ button:hover {
     }
 
 /* FOOTER */
-footer {
-    display: flex;
-    width: 1925px;
-    height: 206px;
-    padding: 0px 9px;
-    justify-content: center;
-    align-items: center;
-    gap: 442px;
-    flex-shrink: 0;
+/*footer{       hay arriba
     background-color: var(--azul);
+    position: relative;
+    z-index: 2;
 }
-footer ol li {
-    color: #E9E9E9;
+ol{
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 24px;
+	font-weight: 400;
+    font-size: 20px;
+    color: var(--hueso);
 }
-
-@media screen and (max-width=600px) {
-	/*SI USAMOS EL HEADER DE DANI, ACÁ YA ESTÁ AJUSTADO PARA QUE FUNCIONE EN MOBILE*/
-    #logo {
-        width: 50%;
-        height: 50%;
-        margin-top: 0px;
-    }
-
-    nav div {
-        display: none;
-    }
-
-    .mobile {
-        position: relative;
-        width: 100%;
-        display: inline-block;
-      }
-    /*SI NO LO USAMOS DE ACÁ PARA ARRIBA SE PUEDE MODIFICAR/BORRAR DE SER NECESARIO*/
-    body {
-        width: 100vw;
-    }
-
-    .bienvenida-galeria {
-        height: 280px;
-    }
-    
-    .bienvenida-galeria h2 {
-        font-size: 30px;
-    }
-
-    .bienvenida-galeria h3 {
-        font-size: 20px;
-    }
-
-    .info h3 {
-        font-size: 20px;
-    }
-
-    .info h4 {
-        font-size: 15px;
-    }
-
-    #interiorfooter {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-    }
-
-    .dropbtn {
-        font-size: 18px;
-    }
-
-    .flechita-galeria {
-        height: 20%;
-        width: 20%;
-    }
+#interiorfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    padding: 70px 2.19vw;
 }
+li{
+    list-style-type: none;
+}
+#redessociales{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.19vw;
+}
+#lineas{
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    width: 100%;
+    z-index: 3; 
+}*/
