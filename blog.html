@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>bajoenlaproxima</title>
-        <link rel="logo" href="img/logo.svg" alt="favicon.ico">
+        <link rel="icon" href="img/favicon.svg" alt="favicon.ico"> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,63 +13,89 @@
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-	    <header>
-		    <nav>
-			    <a href="index.html"></a><img src="img/logo.svg" width="279px" height="140px" alt="logo"/>
-                <div  class="button-nav">
-                    <button><a href="galeria.html">Galería</a></button>
-                    <button><a href="rutas.html">Rutas</a></button>
-                    <button><a href="blog.html">Blog</a></button>
-                    <button><a href="contacto.html">Contacto</a></button>
+		<header>
+            <nav>
+                <a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"></a>
+                <div>
+                    <a href="galeria.html"><span class="button">Galería</span></a>
+                    <a href="mapa.html" ><span class="button">Mapa</span></a>
+                    <a href="blog.html"><span class="button">Blog</span></a>
+                    <a href="#noticia"><span class="button">Contacto</span></a>
                 </div>
-		    </nav>
+                <div class="mobile">
+                    <div onclick="nav()" class="botonnav">
+                        <span class="button">▬</span>
+                    </div>
+                </div>
+                <div id="navabierto" class="listanav">
+                    <a href="galeria.html">Galería</a>
+                    <a href="mapas.html">Mapa</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="formulario.html">Contacto</a>
+                </div>
+            </nav>
         </header>
         <main>
             <section class="bienvenida-blog">
                 <div>
-                    <h1>Zona Blog</h1>
-		            <h4>¡Subite a nuestro blog y viajá con nosotros!</h4>
+                    <h2>Zona Blog</h2>
+		            <h3>¡Subite a nuestro blog y viajá con nosotros!</h3>
                 </div>
             </section>
-            <section>
-                <article id="blog">
-                    <div>
-                        <img src="img/nota1.jpg" width="466px" height="695px" alt="Nota El colectivo no es argentino">
-                        <h4>El colectivo no es un invento argentino</h4>
-                        <p>La verdad es otra, el colectivo proviene de otro lugar.</p>
-                        <p class="botonablog">Ver más</p>
+            <section id="blogpage">
+                <article id="blogin">
+
+                    <div class="indexnota">
+                        <img class="imgnotas" src="img/nota1.jpg" width="466px" height="695px" alt="Nota El colectivo no es argentino">
+                        <div class="infonotaindex">
+                            <h4>El colectivo no es un invento argentino</h4>
+                            <p class="descri" >La verdad es otra, el colectivo proviene de otro lugar.</p>
+                            <a href="notas.html"><p class="botonablog">Ver más</p></a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/nota2.jpg" width="466px" height="695px" alt="Nota Siemre Famosos">
-                        <h4>Por siempre "Famosos"</h4>
-                        <p>Los adornos son todo para estos, conocé cuáles son.</p>
-                        <p class="botonablog">Ver más</p>
+
+                    <div class="indexnota">
+                        <img class="imgnotas" src="img/nota2.jpg" width="466px" height="695px" alt="Nota Siemre Famosos">
+                        <div class="infonotaindex">
+                            <h4>Por siempre "Famosos"</h4>
+                            <p class="descri" >Los adornos son todo para estos, conocé cuáles son.</p>
+                            <a href="notas.html"><p class="botonablog">Ver más</p></a>
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/nota3.jpg" width="466px" height="695px" alt="Nota Colores de la plata">
-                        <h4>Los colores de la Plata, en los 50’</h4>
-                        <p>En los 50’ los ómnibus revolucionaron por sus colores.</p>
-                        <p class="botonablog">Ver más</p>
+
+                    <div class="indexnota">
+                        <img class="imgnotas" src="img/nota3.jpg" width="466px" height="695px" alt="Nota Colores de la plata">
+                        <div class="infonotaindex">
+                            <h4>Los colores de la Plata, en los 50'</h4>
+                            <p class="descri" >En los 50' los ómnibus revolucionaron por sus colores.</p>
+                            <a href="notas.html"><p class="botonablog">Ver más</p></a>
+                        </div>
                     </div>
                 </article>
-            </section>
+			</section>
         </main>
         <footer>
-            <ol>
-                <li>Copyright © 2024 Bajo en la Próxima</li>
-                <li>Uso de condiciones</li>
-                <li>Preferencias sobre cookies</li>
-            </ol>
-            <div>
-                <img src="img/vector_web.svg" width="36px" height="29px" alt="isologo web"/>
-                <img src="img/vector_mail.svg" width="39px" height="29px" alt="isologo mail"/>
-                <img src="img/vector_instagram.svg" width="33px" height="33px" alt="isologo instagram"/>
-                <img src="img/vector_facebook.svg" width="33px" height="33px" alt="isologo facebook"/>
+            <img id="lineas" src="img/lineasfooter.png" width="1920px" height="100px" alt="decoracion">
+            <div id="interiorfooter">
+                <ol>
+                    <li>Copyright © 2024 Bajo en la Próxima</li>
+                    <li>Uso de condiciones</li>
+                    <li>Preferencias sobre cookies</li>
+                </ol>
+                <div id="redessociales">
+                    <img src="img/vector_web.svg" width="36px" height="29px" alt="isologo web"/>
+                    <img src="img/vector_mail.svg" width="39px" height="29px" alt="isologo mail"/>
+                    <img src="img/vector_instagram.svg" width="33px" height="33px" alt="isologo instagram"/>
+                    <img src="img/vector_facebook.svg" width="33px" height="33px" alt="isologo facebook"/>
+                </div>
+                <img  src="img/logo_footer.svg" width="162px" height="84px" alt="logobn"/>
             </div>
-            <img  src="img/logo_footer.svg" width="90px" height="50px" alt="logobn"/>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+        <script src="script.js"></script>
     </body>
 </html>
+
 
 <!--notas-->
