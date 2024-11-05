@@ -573,28 +573,18 @@ footer li{
 }
 
 .bienvenida-blog div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 24px 43px;
     width: 1200px;
-    background-color: #002A54;
     border: 0px;
-    border-radius: 30px;
     color: white;
 }
 
 .bienvenida-blog div {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
-    width: 1600px;
-    background-color: #002A54;
-    border-radius: 30px;
     color: var(--Amarillo, #FEB500);
     text-align: center;
     text-shadow: 4px 2px 0px #E52522;
+    flex-direction: column;
 }
 
 #blog {
