@@ -579,8 +579,6 @@ footer li{
 }
 
 .bienvenida-blog div {
-    flex-wrap: wrap;
-    padding: 24px 43px;
     color: var(--Amarillo, #FEB500);
     text-align: center;
     text-shadow: 4px 2px 0px #E52522;
