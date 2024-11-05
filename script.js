@@ -1,18 +1,17 @@
 // index
-const videoImage = document.getElementById("video");
+const staticImage = document.getElementById("staticImage");
+const hoverVideo = document.getElementById("hoverVideo");
 
-
-const staticImage = "img/bannerindex.jpg";
-const gifImage = "img/bannerindexvideo2.gif"; 
-
-
-videoImage.addEventListener("mouseover", function() {
-    videoImage.src = gifImage; 
+staticImage.addEventListener("mouseover", function() {
+    staticImage.style.display = "none";  
+    hoverVideo.style.display = "block";  
+    hoverVideo.play();                  
 });
 
-
-videoImage.addEventListener("mouseout", function() {
-    videoImage.src = staticImage; 
+hoverVideo.addEventListener("mouseout", function() {
+    hoverVideo.pause();                  
+    hoverVideo.style.display = "none";   
+    staticImage.style.display = "block"; 
 });
 
 // nav mobile
