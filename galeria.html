@@ -13,26 +13,20 @@
         <header>
             <nav>
                 <a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"></a>
-                <div class="container">
-                    <img id="staticImage" src="img/bannerindex.jpg" width="1920px" height="806px" alt="imagen">
-                    <video id="hoverVideo" src="img/videobanner.mp4" width="1920px" height="806px" muted loop></video>
-                    <a href="#Nuestrahistoria">
-                        <div class="text-content">
-                            <h1 id="tituloh1in">Historia sobre Ruedas</h1>
-                            <h4 id="subtituloin">Reviví la gloria de los años dorados del colectivo con esta colección digital</h4>
-                        </div>
-                    </a>
+                <div id="navbotones">
+                    <a href="galeria.html"><span class="button">Galería</span></a>
+                    <a href="mapa.html" ><span class="button">Mapa</span></a>
+                    <a href="blog.html"><span class="button">Blog</span></a>
+                    <a href="#noticia"><span class="button">Contacto</span></a>
                 </div>
-                <div class="mobile">
-                    <div onclick="nav()" class="botonnav">
-                        <span class="button">▬</span>
+                <div class="dropdown">
+                    <button class="dropdown-button">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="galeria.html">Galería</a>
+                        <a href="mapa.html">Mapa</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="#noticia">Contacto</a>
                     </div>
-                </div>
-                <div id="navabierto" class="listanav">
-                    <a href="galeria.html">Galería</a>
-                    <a href="mapas.html">Mapa</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="formulario.html">Contacto</a>
                 </div>
             </nav>
         </header>
@@ -43,7 +37,7 @@
                     <h3>Un recorrido histórico por los colectivos de la ciudad de Buenos Aires en todos sus colores</h3>
                 </div>
             </section>
-           <section class="categorias">
+            <section class="categorias">
             <div class="dropdown">
                 <div onclick="dropdown()" class="dropbtn">
                     Los icónicos de los 50' 
