@@ -135,7 +135,7 @@ span.button:active {
     display: block; 
     object-fit: cover;
 }
-#hoverVideo {
+#hovervideo:hover {
     display: none; 
     top: 0;
     left: 0;
