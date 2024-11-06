@@ -49,6 +49,9 @@ body {
     cursor: url(img/cursor.svg),auto;
 }
 
+#logo{
+    padding-top: 16px;
+}
 
 nav{
     z-index: 2;
