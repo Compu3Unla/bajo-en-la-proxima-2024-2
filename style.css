@@ -49,9 +49,6 @@ body {
     cursor: url(img/cursor.svg),auto;
 }
 
-#logo{
-    padding-top: 16px;
-}
 
 nav{
     z-index: 2;
@@ -508,8 +505,8 @@ footer li{
     border-radius: 20px;
     cursor: pointer;
 }
-
-.dropbtn:hover {
+  
+  .dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #002A54;
 }
@@ -527,7 +524,7 @@ footer li{
     width: auto;
     z-index: 1;
 }
-
+  
 .show {
     display: inline-grid;
     grid-template-columns: 320px 320px 320px;
@@ -595,7 +592,7 @@ footer li{
     justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
-    width: 1600px;
+    width: 1400px;
     background-color: #002A54;
     border: 0px;
     border-radius: 30px;
@@ -634,8 +631,102 @@ footer li{
 }
 
 /*MAPA PAGE*/
+.bienvenida-mapas {
+    height: 1000px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_15 (1).jpg") lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bienvenida-mapas div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1600px;
+    background-color: #FEB500;
+    border: 0px;
+    border-radius: 30px;
+    color: #002A54;
+}
+.seccion-colectivo {
+    height: 300px;
+    background: #002A54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FEB500;
+    margin: 0px;
+}
+
+#mapas {
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    justify-content: space-between;
+    gap: 100px;
+}
+#contenedor-lineas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+}
+.btn-group-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-items: center;
+    gap: 85px;
+}
+.btn-primary {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 50px;
+    color: #D9D9D9;
+    background-color: #E22522;
+    border-radius: 30px;
+    border-color: #E52522;
+}
+.btn-group-vertical>.btn~.btn {
+    border-radius: 30px;
+}
+.btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 30px;
+}
+
+label {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    gap: 50px;
+    color: #D9D9D9;
+    background-color: #E22522;
+    border-radius: 30px;
+}
+#contenedor-mapas {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+#mapas {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    transition: opacity 0.5s ease-in-out;
+}
+.separador-main {
+    background-color: #002A54;
+    height: 200px;
+}
+
+
 .mapa {
-    width: 80%;
+    width: 80%MAPAS;
     height: 400px;
     margin: 20px auto;
 }
@@ -647,6 +738,7 @@ ol{
     color: var(--hueso);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 #interiorfooter{
     display: flex;
     align-items: center;
@@ -657,6 +749,9 @@ ol{
 }
 =======
 >>>>>>> fe87a24848eabf6e738e5b5ec7f37a08bee6a59e
+=======
+
+>>>>>>> 6ca17e3e4afc9d9925507061e521d12f44c61e59
 li{
     list-style-type: none;
 }
@@ -672,6 +767,7 @@ li{
     width: 100%;
     z-index: 3; 
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -716,6 +812,9 @@ li{
     display: block;
 }
 >>>>>>> fe87a24848eabf6e738e5b5ec7f37a08bee6a59e
+=======
+
+>>>>>>> 6ca17e3e4afc9d9925507061e521d12f44c61e59
 @media only screen and (max-width: 1366px){
     .imgnotas {
         width: 95%;
@@ -816,10 +915,14 @@ li{
         width: 80px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     #video {
 =======
     #staticimage {
 >>>>>>> fe87a24848eabf6e738e5b5ec7f37a08bee6a59e
+=======
+    #video {
+>>>>>>> 6ca17e3e4afc9d9925507061e521d12f44c61e59
         content: url(img/banner-index-600.jpg);
     }
     #tituloh1in {
@@ -927,17 +1030,25 @@ p {
         font-size: 24px; 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> fe87a24848eabf6e738e5b5ec7f37a08bee6a59e
+=======
+
+>>>>>>> 6ca17e3e4afc9d9925507061e521d12f44c61e59
     label, 
     #enviar {
         font-size: 16px; 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> fe87a24848eabf6e738e5b5ec7f37a08bee6a59e
+=======
+
+>>>>>>> 6ca17e3e4afc9d9925507061e521d12f44c61e59
     #redessociales {
         justify-content: center; 
     }
@@ -988,6 +1099,7 @@ p {
         width: 80%;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #interiorfooter{
         display: flex;
@@ -999,4 +1111,6 @@ p {
         margin-right: 80px;
     }
 >>>>>>> fe87a24848eabf6e738e5b5ec7f37a08bee6a59e
+=======
+>>>>>>> 6ca17e3e4afc9d9925507061e521d12f44c61e59
 }
