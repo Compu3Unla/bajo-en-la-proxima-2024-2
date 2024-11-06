@@ -59,44 +59,17 @@ nav{
     padding: 0% 5% ;
     background-color: var(--azul);
     width: 100%;
-    height: 8.12vw;
+    height: 150px;
 }
-
+#logo{
+    width: 35%;
+    height: auto;
+    margin-top: 72px;
+}
 #navbotones{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-}
-
-/*nav ajustado para mobile*/
-.botonnav {
-    display: block;
-    cursor: pointer;
-}
-
-.mobile {
-    display: none;
-}
-.listanav {
-    display: none;
-    position: relative;
-    background-color: #002A54;
-    width: auto;
-    z-index: 1;
-}
-.mostrarnav {
-    display: inline-grid;
-    grid-template-columns: 320px 320px 320px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-/*fin de nav mobile*/
-#logo{
-    margin-top: 3.66vw;
-    z-index: 1; 
 }
 span{
     display: inline-block;
@@ -149,7 +122,7 @@ span.button:active {
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    z-index: 2;
+    z-index: 1;
     margin-bottom: 50px;
 }
 #tituloh1in{
@@ -505,8 +478,8 @@ footer li{
     border-radius: 20px;
     cursor: pointer;
 }
-  
-  .dropbtn:hover {
+
+.dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #002A54;
 }
@@ -524,7 +497,7 @@ footer li{
     width: auto;
     z-index: 1;
 }
-  
+
 .show {
     display: inline-grid;
     grid-template-columns: 320px 320px 320px;
@@ -563,7 +536,7 @@ footer li{
 }
 
 /*BLOG PAGE*/
-.bienblog {
+.bienblog{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,7 +565,7 @@ footer li{
     justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
-    width: 1400px;
+    width: 1600px;
     background-color: #002A54;
     border: 0px;
     border-radius: 30px;
@@ -631,102 +604,8 @@ footer li{
 }
 
 /*MAPA PAGE*/
-.bienvenida-mapas {
-    height: 1000px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_15 (1).jpg") lightgray 50% / cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bienvenida-mapas div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 24px 43px;
-    width: 1600px;
-    background-color: #FEB500;
-    border: 0px;
-    border-radius: 30px;
-    color: #002A54;
-}
-.seccion-colectivo {
-    height: 300px;
-    background: #002A54;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FEB500;
-    margin: 0px;
-}
-
-#mapas {
-    display: flex;
-    align-items: center;
-    background-color: #D9D9D9;
-    justify-content: space-between;
-    gap: 100px;
-}
-#contenedor-lineas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 800px;
-    height: 800px;
-}
-.btn-group-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    justify-items: center;
-    gap: 85px;
-}
-.btn-primary {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 50px;
-    color: #D9D9D9;
-    background-color: #E22522;
-    border-radius: 30px;
-    border-color: #E52522;
-}
-.btn-group-vertical>.btn~.btn {
-    border-radius: 30px;
-}
-.btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle) {
-    border-radius: 30px;
-}
-
-label {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 50px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
-    gap: 50px;
-    color: #D9D9D9;
-    background-color: #E22522;
-    border-radius: 30px;
-}
-#contenedor-mapas {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-}
-#mapas {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    transition: opacity 0.5s ease-in-out;
-}
-.separador-main {
-    background-color: #002A54;
-    height: 200px;
-}
-
-
 .mapa {
-    width: 80%MAPAS;
+    width: 80%;
     height: 400px;
     margin: 20px auto;
 }
@@ -737,7 +616,6 @@ ol{
     font-size: 20px;
     color: var(--hueso);
 }
-
 li{
     list-style-type: none;
 }
@@ -753,10 +631,52 @@ li{
     width: 100%;
     z-index: 3; 
 }
-
+.mobile { 
+    position: relative;
+    display: inline-block;
+    display: none;
+}
+.listanav2 {
+    background-color: var(--amarillo);
+    color: var(--azul);
+    border-bottom: 5px solid var(--rojo);
+    padding: 5px 25px;
+    font-family: "IBM Plex Sans";
+    font-size: 4vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.mostrar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: var(--amarillo);
+    z-index: 2;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 90px 10px 20px 10px;
+}
+.mostrar a {
+    color: var(--azul);
+    padding: 15px;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
 @media only screen and (max-width: 1366px){
+    nav{
+        width: 100%;
+        height: 100px;
+    }
+    #logo{
+        width: 36%;
+        height: auto;
+        margin-top: 44px;
+    }
     .imgnotas {
-        width: 95%;
+        width: 100%;
         height: auto;
     }
     .botonablog {
@@ -788,6 +708,9 @@ li{
     #enviar {
         font-size: 18px; 
     }
+    .formulario-sobre-imagen {
+        height: 75%;
+        }
 }
 
 @media screen and (max-width: 600px) {
@@ -796,23 +719,12 @@ li{
         height: 50%;
         margin-top: 0px;
     }
-
-    nav div {
-        display: none;
+    nav {
+        height: 50px;
     }
     #navbotones{
         display: none;
     }
-    /*si ya lo copiaron en otro lado saquenlo a lo de mobile!*/
-
-    .mobile {
-        position: relative;
-        width: 100%;
-        display: inline-block;
-    }
-
-    /*solo esto de arriba, lo demás es para la galeria je*/
-
     .bienvenida-galeria {
         height: 280px;
     }
@@ -820,11 +732,9 @@ li{
     .bienvenida-galeria h2 {
         font-size: 30px;
     }
-
     .bienvenida-galeria h3 {
         font-size: 20px;
     }
-
     .info h3 {
         font-size: 20px;
     }
@@ -850,10 +760,10 @@ li{
         margin-bottom: 0px; 
     }
     #logo {
-        margin-top: 10px;
-        width: 80px;
+        margin-top: 20px;
+        width: 50%;
     }
-    #video {
+    #staticimage {
         content: url(img/banner-index-600.jpg);
     }
     #tituloh1in {
@@ -899,6 +809,7 @@ li{
     }
     .indexnota {
         width: 100%;
+        height: 475px;
     }
     .botonablog {
         font-size: 3.5vw;
@@ -920,7 +831,7 @@ li{
     flex-direction: column;
 }
 .infonotaindex{
-    bottom: 276px;
+    top: 228px;
 }
 /**/
 #historianosotros {
@@ -960,12 +871,10 @@ p {
     legend {
         font-size: 24px; 
     }
-
     label, 
     #enviar {
         font-size: 16px; 
     }
-
     #redessociales {
         justify-content: center; 
     }
@@ -1014,5 +923,14 @@ p {
     }
     .form-control{
         width: 80%;
+    }
+    #interiorfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mobile{
+        display: flex;
+        margin-right: 20px;
     }
 }

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>bajoenlaproxima</title>
+        <title>Bajo en la Próxima</title>
         <link rel="icon" href="img/favicon.svg" alt="favicon.ico"> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet" type="text/css">
@@ -12,61 +12,57 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <header>
-        <nav>
-            <a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"></a>
-            <div id="navbotones">
+		<nav>
+			<a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"></a>
+            <div>
                 <a href="galeria.html"><span class="button">Galería</span></a>
                 <a href="mapa.html" ><span class="button">Mapa</span></a>
                 <a href="blog.html"><span class="button">Blog</span></a>
                 <a href="#noticia"><span class="button">Contacto</span></a>
             </div>
-            <div class="dropdown">
-                <button class="dropdown-button">Menú</button>
-                <div class="dropdown-content">
-                    <a href="galeria.html">Galería</a>
-                    <a href="mapa.html">Mapa</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="#noticia">Contacto</a>
+            <div class="mobile">
+                <div onclick="nav()" class="botonnav">
+                    <span class="button">▬</span>
                 </div>
             </div>
-        </nav>
+            <div id="navabierto" class="listanav">
+                <a href="galeria.html">Galería</a>
+                <a href="mapas.html">Mapa</a>
+                <a href="blog.html">Blog</a>
+                <a href="formulario.html">Contacto</a>
+            </div>
+		</nav>
+        <img src="img/bannerhome.png" width="1920px" height="888px" alt="banner"/>
+        <h1>¿A dónde nos llevaba este bondi?</h1>
+        <h4>Conoce los trayectos clasicos de las líneas más conocidas</h4>
     </header>
     <body>
         <main>
-            <section class="bienvenida-mapas">
+            <section class="bienvenida-blog">
                 <div>
-                    <h3>¿A dónde nos llevaba este bondi?</h3>
-                    <h5>Conoce los trayectos clasicos de las líneas más </h5>
+                    <img src="img/banner_zonablog.jpg" width="1920px" height="888px" alt="banner"/>
+                    <h1>¿A dónde nos llevaba este bondi?</h1>
+                    <h4>Conoce los trayectos clasicos de las líneas más conocidas</h4>
                 </div>
             </section>
             <section>
                 <div>
-                    <h3 class="seccion-colectivo">Buenos Aires</h3>
+                    <p class="colectivo">Buenos Aires</p>
                 </div>
             </section>
             <section>
-                <article id="mapas">
-                    <div id="contenedor-lineas">
-                        <!--<label><input type="checkbox">Línea 33</label>
-                        <label><input type="checkbox">Línea 37</label>
-                        <label><input type="checkbox">Línea 60</label>
-                        <label><input type="checkbox">Línea 79</label>
-                        <label><input type="checkbox">Línea 160</label>-->
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                            <button type="button" class="btn btn-primary">Línea 33</button>
-                            <button type="button" class="btn btn-primary">Línea 37</button>
-                            <button type="button" class="btn btn-primary">Línea 60</button>
-                            <button type="button" class="btn btn-primary">Línea 79</button>
-                            <button type="button" class="btn btn-primary">Línea 160</button>
-                        </div>
-                    </div>
-                    <img id="mapas" src="img/mapa-33.png" width="1483px" height="1158px" alt="Mapa linea 33">
-                </article>
+                <div class="mapa"></div>
+                <div class="lineas">
+                    <label><input type="checkbox"> Línea 33</label>
+                    <label><input type="checkbox"> Línea 37</label>
+                    <label><input type="checkbox"> Línea 60</label>
+                    <label><input type="checkbox"> Línea 79</label>
+                    <label><input type="checkbox"> Línea 160</label>
+                </div>
             </section>
-            <section class="separador-main"></section>
         </main>
         <footer>
-            <img id="lineas" src="img/lineasfooter.svg" width="1920px" height="100px" alt="decoracion">
+            <img id="lineas" src="img/lineasfooter.png" width="1920px" height="100px" alt="decoracion">
             <div id="interiorfooter">
                 <ol>
                     <li>Copyright © 2024 Bajo en la Próxima</li>
@@ -77,12 +73,13 @@
                     <img src="img/vector_web.svg" width="36px" height="29px" alt="isologo web"/>
                     <img src="img/vector_mail.svg" width="39px" height="29px" alt="isologo mail"/>
                     <img src="img/vector_instagram.svg" width="33px" height="33px" alt="isologo instagram"/>
-                    <img src="img/vector_facebook.svg" width="33px" height="33px" alt="isologo facebook"/>
+                    <img src="img/Vector_facebook.svg" width="33px" height="33px" alt="isologo facebook"/>
                 </div>
                 <img  src="img/logo_footer.svg" width="162px" height="84px" alt="logobn"/>
-        </div>
+            </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
         <script src="script.js"></script>
     </body>
 </html>
-<!--VIEJO-->

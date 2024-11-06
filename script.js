@@ -15,21 +15,10 @@ hoverVideo.addEventListener("mouseout", function() {
 });
 
 // nav mobile
-function nav() {
-    document.getElementById("navabierto").classList.toggle("mostrarnav");
-  }
-  window.onclick = function(event) {
-    if (!event.target.matches('.botonnav')) {
-      var dropdowns = document.getElementsByClassName("listanav");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('mostrarnav')) {
-          openDropdown.classList.remove('mostrarnav');
-        }
-      }
-    }
-  }
+document.querySelector('.listanav2').addEventListener('click', function() {
+  const menu = document.querySelector('.mostrar');
+  menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+});
 
   //galeria
   function dropdown() {

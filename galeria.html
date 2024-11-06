@@ -12,22 +12,20 @@
     <body>
         <header>
             <nav>
-                <a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"/></a>
-                <div>
-                    <a href="img.html"><span class="button">Galería</span></a>
-                    <span class="button">Mapa</span>
-                    <span class="button">Blog</span>
-                    <span class="button">Contacto</span>
+                <a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"></a>
+                <div id="navbotones">
+                    <a href="galeria.html"><span class="button">Galería</span></a>
+                    <a href="mapa.html" ><span class="button">Mapa</span></a>
+                    <a href="blog.html"><span class="button">Blog</span></a>
+                    <a href="#noticia"><span class="button">Contacto</span></a>
                 </div>
                 <div class="mobile">
-                    <div onclick="nav()" class="botonnav">
-                        <span class="button">▬</span>
-                    </div>
-                    <div id="navabierto" class="listanav">
-                    <a href="galeria.html">Galería</a>
-                    <a href="mapas.html">Mapa</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="formulario.html">Contacto</a>
+                    <button class="listanav2">Menú</button>
+                    <div class="mostrar">
+                        <a href="galeria.html">Galería</a>
+                        <a href="mapa.html">Mapa</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="#noticia">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -39,7 +37,7 @@
                     <h3>Un recorrido histórico por los colectivos de la ciudad de Buenos Aires en todos sus colores</h3>
                 </div>
             </section>
-           <section class="categorias">
+            <section class="categorias">
             <div class="dropdown">
                 <div onclick="dropdown()" class="dropbtn">
                     Los icónicos de los 50' 
@@ -327,7 +325,7 @@
            </section>
         </main>
         <footer>
-            <img id="lineas" src="img/lineasfooter.svg" width="1920px" height="100px" alt="decoracion">
+            <img id="lineas" src="img/lineasfooter.png" width="1920px" height="100px" alt="decoracion">
             <div id="interiorfooter">
                 <ol>
                     <li>Copyright © 2024 Bajo en la Próxima</li>
