@@ -505,8 +505,8 @@ footer li{
     border-radius: 20px;
     cursor: pointer;
 }
-  
-  .dropbtn:hover {
+
+.dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #002A54;
 }
@@ -524,7 +524,7 @@ footer li{
     width: auto;
     z-index: 1;
 }
-  
+
 .show {
     display: inline-grid;
     grid-template-columns: 320px 320px 320px;
