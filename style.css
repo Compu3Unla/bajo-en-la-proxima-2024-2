@@ -466,11 +466,12 @@ footer li{
     justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
-    width: 1600px;
+    width: 800px;
     background-color: #002A54;
     border: 0px;
     border-radius: 30px;
     color: white;
+    gap: 20px;
 }
 
 .categorias {
@@ -520,7 +521,7 @@ footer li{
     position: relative;
     width: 100%;
     display: inline-block;
-  }
+}
     
 .dropdown-content {
     display: none;
@@ -528,7 +529,7 @@ footer li{
     background-color: #002A54;
     width: auto;
     z-index: 1;
-  }
+}
   
 .show {
     display: inline-grid;
@@ -593,6 +594,14 @@ footer li{
     text-align: center;
     text-shadow: 4px 2px 0px #E52522;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 24px 43px;
+    width: 1600px;
+    background-color: #002A54;
+    border: 0px;
+    border-radius: 30px;
 }
 
 #blog {
