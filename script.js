@@ -20,7 +20,7 @@ function nav() {
   }
   window.onclick = function(event) {
     if (!event.target.matches('.botonnav')) {
-      var dropdowns = document.getElementsByClassName("listanav");
+      var dropdowns = document.getElementsByClassName("listanav2");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
