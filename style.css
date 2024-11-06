@@ -632,7 +632,7 @@ footer li{
 
 /*MAPA PAGE*/
 .bienvenida-mapas {
-    height: 1000px;
+    height: 1100px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_15 (1).jpg") lightgray 50% / cover no-repeat;
     display: flex;
     align-items: center;
@@ -688,6 +688,8 @@ footer li{
     background-color: #E22522;
     border-radius: 30px;
     border-color: #E52522;
+    height: 80px;
+    bottom: 20%;
 }
 .btn-group-vertical>.btn~.btn {
     border-radius: 30px;
@@ -724,6 +726,8 @@ label {
     height: 200px;
 }
 
+/*------------------------FIN MAPAS-----------------------------------*/
+
 
 .mapa {
     width: 80%MAPAS;
@@ -745,13 +749,6 @@ li{
     display: flex;
     justify-content: space-between;
     gap: 2.19vw;
-}
-#lineas{
-    position: absolute;
-    top: -50px; 
-    left: 0;
-    width: 100%;
-    z-index: 3; 
 }
 
 @media only screen and (max-width: 1366px){

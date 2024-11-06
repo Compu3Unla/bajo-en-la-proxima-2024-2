@@ -14,20 +14,22 @@
     <header>
         <nav>
             <a href="index.html"><img id="logo" src="img/logo.svg" width="279px" height="140px" alt="logo"></a>
-            <div id="navbotones">
+            <div>
                 <a href="galeria.html"><span class="button">Galería</span></a>
                 <a href="mapa.html" ><span class="button">Mapa</span></a>
                 <a href="blog.html"><span class="button">Blog</span></a>
                 <a href="#noticia"><span class="button">Contacto</span></a>
             </div>
-            <div class="dropdown">
-                <button class="dropdown-button">Menú</button>
-                <div class="dropdown-content">
-                    <a href="galeria.html">Galería</a>
-                    <a href="mapa.html">Mapa</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="#noticia">Contacto</a>
+            <div class="mobile">
+                <div onclick="nav()" class="botonnav">
+                    <span class="button">▬</span>
                 </div>
+            </div>
+            <div id="navabierto" class="listanav">
+                <a href="galeria.html">Galería</a>
+                <a href="mapas.html">Mapa</a>
+                <a href="blog.html">Blog</a>
+                <a href="formulario.html">Contacto</a>
             </div>
         </nav>
     </header>
@@ -36,7 +38,7 @@
             <section class="bienvenida-mapas">
                 <div>
                     <h3>¿A dónde nos llevaba este bondi?</h3>
-                    <h5>Conoce los trayectos clasicos de las líneas más </h5>
+                    <p>Conoce los trayectos clásicos de las líneas más famosas. </p>
                 </div>
             </section>
             <section>
@@ -60,13 +62,13 @@
                             <button type="button" class="btn btn-primary">Línea 160</button>
                         </div>
                     </div>
-                    <img id="mapas" src="img/mapa-33.png" width="1483px" height="1158px" alt="Mapa linea 33">
+                    <img class="mapa33" src="img/mapa-33.png" width="1483px" height="1158px" alt="Mapa linea 33">
                 </article>
             </section>
             <section class="separador-main"></section>
         </main>
         <footer>
-            <img id="lineas" src="img/lineasfooter.svg" width="1920px" height="100px" alt="decoracion">
+            <img id="lineas" src="img/lineasfooter.png" width="1920px" height="100px" alt="decoracion">
             <div id="interiorfooter">
                 <ol>
                     <li>Copyright © 2024 Bajo en la Próxima</li>
@@ -85,4 +87,4 @@
         <script src="script.js"></script>
     </body>
 </html>
-<!--VIEJO-->
+<!--NUEVO-->
