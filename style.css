@@ -643,14 +643,6 @@ ol{
     font-size: 20px;
     color: var(--hueso);
 }
-#interiorfooter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
-    padding: 70px 2.19vw;
-}
 li{
     list-style-type: none;
 }
@@ -666,7 +658,46 @@ li{
     width: 100%;
     z-index: 3; 
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: none;
+}
+.dropdown-button {
+    background-color: rgba(185, 113, 255, 0.40);
+    color: var(--secondary-color);
+    padding:10px 30px;
+    font-size: 3vw;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.dropdown-button:hover {
+    background-color: var(--violeta);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--violeta);
+    z-index: 1;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 90px 10px 20px 10px;
+    justify-items: center;
+}
+.dropdown-content a {
+    color: var(--secondary-color);
+    padding: 15px;
+    font-size: 3vw;
+    text-decoration: none;
+    display: block;
 
+}
+.dropdown-content a:hover {
+    background-color: rgba(185, 113, 255, 0.40);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 @media only screen and (max-width: 1366px){
     .imgnotas {
         width: 95%;
@@ -766,7 +797,7 @@ li{
         margin-top: 10px;
         width: 80px;
     }
-    #video {
+    #staticimage {
         content: url(img/banner-index-600.jpg);
     }
     #tituloh1in {
@@ -873,12 +904,10 @@ p {
     legend {
         font-size: 24px; 
     }
-
     label, 
     #enviar {
         font-size: 16px; 
     }
-
     #redessociales {
         justify-content: center; 
     }
@@ -927,5 +956,14 @@ p {
     }
     .form-control{
         width: 80%;
+    }
+    #interiorfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .dropdown{
+        display: flex;
+        margin-right: 80px;
     }
 }
