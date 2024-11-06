@@ -128,14 +128,8 @@ span.button:active {
     height: auto;
     padding: 0%;
 }
-#video {
-    width: 100%;
-    height: auto;
-    z-index: 1; 
-    display: block; 
-    object-fit: cover;
-}
-#hovervideo:hover {
+
+#alvideo {
     display: none; 
     top: 0;
     left: 0;
@@ -143,7 +137,7 @@ span.button:active {
     height: auto;
 }
 
-#staticImage {
+#staticimage {
     display: block;
     width: 100%;
     height: auto;

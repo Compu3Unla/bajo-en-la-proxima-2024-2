@@ -1,6 +1,6 @@
 // index
-const staticImage = document.getElementById("staticImage");
-const hoverVideo = document.getElementById("hoverVideo");
+const staticImage = document.getElementById("staticimage");
+const hoverVideo = document.getElementById("alvideo");
 
 staticImage.addEventListener("mouseover", function() {
     staticImage.style.display = "none";  
