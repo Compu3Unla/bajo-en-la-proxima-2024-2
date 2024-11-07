@@ -1,6 +1,5 @@
 @charset "utf-8";
 /*CSS Document*/
-
 *{
     margin: 0px;
     padding: 0px;
@@ -67,33 +66,6 @@ nav{
     justify-content: space-evenly;
     gap: 20px;
 }
-
-/*nav ajustado para mobile*/
-.botonnav {
-    display: block;
-    cursor: pointer;
-}
-
-.mobile {
-    display: none;
-}
-.listanav {
-    display: none;
-    position: relative;
-    background-color: #002A54;
-    width: auto;
-    z-index: 1;
-}
-.mostrarnav {
-    display: inline-grid;
-    grid-template-columns: 320px 320px 320px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-/*fin de nav mobile*/
 #logo{
     margin-top: 3.66vw;
     z-index: 1; 
@@ -633,8 +605,9 @@ footer li{
 /*MAPA PAGE*/
 .bienvenida-mapas {
     height: 1100px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_15 (1).jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner-mapa.jpeg") lightgray 50% / cover no-repeat;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -718,7 +691,7 @@ footer li{
 
 
 .mapa {
-    width: 80%MAPAS;
+    width: 80%;
     height: 400px;
     margin: 20px auto;
 }
@@ -738,8 +711,48 @@ li{
     justify-content: space-between;
     gap: 2.19vw;
 }
+.mobile{
+    position: relative;
+    display: inline-block;
+    display: none;
+}
+.listanav2{
+    background-color: var(--amarillo);
+    color: var(--azul);
+    border-bottom:5px solid var(--rojo);
+    padding: 5px 25px;
+    font-family: "IBM PlexSans";
+    font-size: 4vw;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.mostrar{
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    position: absolute;
+    background-color: var(--azul);
+    z-index: 2;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 90px 10px 20px 10px;
+}
+.mostrar a{
+    color: var(--azul);
+    padding: 15px;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+}
 
 @media only screen and (max-width: 1366px){
+    #logo{
+        width: 230px;
+        height: auto;
+        margin-top: 36px;
+    }
     .imgnotas {
         width: 95%;
         height: auto;
@@ -785,26 +798,15 @@ li{
         margin-top: 0px;
     }
 
-    nav div {
-        display: none;
+    nav{
+        height: 50px;
     }
     #navbotones{
         display: none;
     }
-    /*si ya lo copiaron en otro lado saquenlo a lo de mobile!*/
-
-    .mobile {
-        position: relative;
-        width: 100%;
-        display: inline-block;
-    }
-
-    /*solo esto de arriba, lo demás es para la galeria je*/
-
     .bienvenida-galeria {
         height: 280px;
     }
-    
     .bienvenida-galeria h2 {
         font-size: 30px;
     }
@@ -838,8 +840,8 @@ li{
         margin-bottom: 0px; 
     }
     #logo {
-        margin-top: 10px;
-        width: 80px;
+        margin-top: 20px;
+        width: 50%;
     }
     #video {
         content: url(img/banner-index-600.jpg);
@@ -887,6 +889,7 @@ li{
     }
     .indexnota {
         width: 100%;
+        height: 475px;
     }
     .botonablog {
         font-size: 3.5vw;
@@ -908,7 +911,7 @@ li{
     flex-direction: column;
 }
 .infonotaindex{
-    bottom: 276px;
+    bottom: 210px;
 }
 /**/
 #historianosotros {
@@ -948,12 +951,10 @@ p {
     legend {
         font-size: 24px; 
     }
-
     label, 
     #enviar {
         font-size: 16px; 
     }
-
     #redessociales {
         justify-content: center; 
     }
@@ -1002,5 +1003,14 @@ p {
     }
     .form-control{
         width: 80%;
+    }
+    #interiorfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mobile{
+        display: flex;
+        margin-right: 20px;
     }
 }
