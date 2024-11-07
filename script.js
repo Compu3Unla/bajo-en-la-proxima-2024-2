@@ -90,3 +90,31 @@ document.querySelector('.listanav2').addEventListener('click', function() {
   element.addEventListener("click", function () {  
     element.classList.toggle("back");
   });
+
+// mapas pages
+var myImage=document.querySelector("#img-id");
+
+function linea33()
+{
+  myImage.src="img/mapa-33.jpeg"
+}
+
+function linea37()
+{
+  myImage.src="img/mapa-37.jpeg"
+}
+
+function linea60()
+{
+  myImage.src="img/mapa-60.jpeg"
+}
+
+function linea79()
+{
+  myImage.src="img/mapa-79.png"
+}
+
+function linea160()
+{
+  myImage.src="img/mapa-160.png"
+}

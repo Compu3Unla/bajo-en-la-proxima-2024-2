@@ -19,9 +19,9 @@
                     <a href="galeria.html"><span class="button">Galería</span></a>
                     <a href="mapa.html" ><span class="button">Mapa</span></a>
                     <a href="blog.html"><span class="button">Blog</span></a>
-                    <a href="#noticia"><span class="button">Contacto</span></a>
+                    <a href="contacto.html"><span class="button">Contacto</span></a>
                 </div>
-                <div class="mobile">
+                <!--<div class="mobile">
                     <button class="listanav2">Menú</button>
                     <div class="mostrar">
                         <a href="galeria.html">Galería</a>
@@ -29,14 +29,14 @@
                         <a href="blog.html">Blog</a>
                         <a href="contacto.html">Contacto</a>
                     </div>
-                </div>
-            </nav>
+                </div>-->
+            </nav>    
         </header>
         <main>
             <section class="bienvenida-mapas">
                 <div>
-                    <h3>¿A dónde nos llevaba este bondi?</h3>
-                    <p>Conoce los trayectos clásicos de las líneas más famosas. </p>
+                    <h2>¿A dónde nos llevaba este bondi?</h2>
+                    <h4>Conoce los trayectos clásicos de las líneas más conocidas. </h4>
                 </div>
             </section>
             <section>
@@ -47,20 +47,19 @@
             <section>
                 <article id="mapas">
                     <div id="contenedor-lineas">
-                        <!--<label><input type="checkbox">Línea 33</label>
-                        <label><input type="checkbox">Línea 37</label>
-                        <label><input type="checkbox">Línea 60</label>
-                        <label><input type="checkbox">Línea 79</label>
-                        <label><input type="checkbox">Línea 160</label>-->
+
                         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                            <button type="button" class="btn btn-primary">Línea 33</button>
-                            <button type="button" class="btn btn-primary">Línea 37</button>
-                            <button type="button" class="btn btn-primary">Línea 60</button>
-                            <button type="button" class="btn btn-primary">Línea 79</button>
-                            <button type="button" class="btn btn-primary">Línea 160</button>
+                            <button onClick="linea33()" type="button" class="btn btn-primary">Línea 33</button>
+                            <button onClick="linea37()" type="button" class="btn btn-primary">Línea 37</button>
+                            <button onClick="linea60()" type="button" class="btn btn-primary">Línea 60</button>
+                            <button onClick="linea79()" type="button" class="btn btn-primary">Línea 79</button>
+                            <button onClick="linea160()" type="button" class="btn btn-primary">Línea 160</button>
+                        </div>
+
+                        <div id="contenedor-recorridos">
+                            <img id="img-id" src="img/mapa-33.jpeg" width="1483px" height="1158px" alt="Mapa linea 33">
                         </div>
                     </div>
-                    <img class="mapa33" src="img/mapa-33.jpeg" width="1483px" height="1158px" alt="Mapa linea 33">
                 </article>
             </section>
             <section class="separador-main"></section>
@@ -80,7 +79,7 @@
                     <img src="img/vector_facebook.svg" width="33px" height="33px" alt="isologo facebook"/>
                 </div>
                 <img  src="img/logo_footer.svg" width="162px" height="84px" alt="logobn"/>
-            </div>
+        </div>
         </footer>
         <script src="script.js"></script>
     </body>

@@ -34,13 +34,8 @@ h4 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
 }
-h5 {
-    font-size: 1.25vw; 
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-}
 p {
-    font-size: 1.1vw; 
+    font-size: 1.25vw; 
     font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -183,6 +178,23 @@ span.button:active {
 }
 .carousel-indicators{
     position: relative;
+    opacity: 0;
+}
+.carousel-control-next{
+    content: url(img/flecha\ der.svg);
+    opacity: 1;
+    width: 120px;
+    height: auto;
+    top: 300px;
+    left: 809px;
+}
+.carousel-control-prev{
+    content: url(img/flecha\ izq.svg);
+    width: 120px;
+    height: auto;
+    opacity: 1;
+    top: 300px;
+    left: -80px;
 }
 /*------------------------*/
 /*indexmapa*/
@@ -229,7 +241,11 @@ span.button:active {
     align-items: center;
     justify-content: space-evenly;
 }
-
+#blogin2{
+    display: flex;
+    align-items: center;
+    justify-content: s;
+}
 #blogindex{
     background-color: var(--amarillo);
     padding: 80px 40px;
@@ -276,7 +292,9 @@ span.button:active {
     border: 2px solid var(--celeste); 
     color: var(--celeste); 
 }
-/*---------------------------------*/
+#alosblogs{
+    m
+
 /*nosotros*/
 .nosotros{
     background-color: var(--azul);
@@ -432,7 +450,7 @@ footer li{
     justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
-    width: 800px;
+    width: 80%;
     background-color: #002A54;
     border: 0px;
     border-radius: 30px;
@@ -478,7 +496,7 @@ footer li{
     cursor: pointer;
 }
   
-  .dropbtn:hover {
+.dropbtn:hover {
     background-color: #002A54;
     box-shadow: 5px 6px 0px 0px #002A54;
 }
@@ -493,28 +511,26 @@ footer li{
     display: none;
     position: relative;
     background-color: #002A54;
-    width: auto;
     z-index: 1;
 }
   
 .show {
     display: inline-grid;
-    grid-template-columns: 320px 320px 320px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(3, 420px);
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    justify-content: center;
 }
 
 .info {
     position: relative;
     bottom: 0;
-    left: -319.6px;
+    left: -420px;
     background-color: rgb(0, 42, 54, 0.75);
     overflow: hidden;
     height: 0;
-    width: 313px;
+    width: 413px;
     transition: .5s ease;
     color: white;
     font-size: 20px;
@@ -526,12 +542,12 @@ footer li{
 
 .grid-item {
     display: inline-grid;
-    place-items: center;
-    grid-template-columns: 320px 320px 320px;
+    grid-template-columns: repeat(3, 420px);
+    width: fit-content;
 }
 
 .grid-item:hover .info {
-    height: 223px;
+    height: 294px;
 }
 
 /*BLOG PAGE*/
@@ -602,12 +618,88 @@ footer li{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/nota1.jpg") lightgray 50% / cover no-repeat;
 }
 
-/*MAPA PAGE*/
-.bienvenida-mapas {
-    height: 1100px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner-mapa.jpeg") lightgray 50% / cover no-repeat;
+/*Notas page----------------------------------Anita*/
+
+.autor{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0%;
+}
+
+.fecha{
+    font-weight: 700;
+}
+
+.nota-completa{
+    color: #002A54;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 140px 32% 150px 20%;
+    gap: 38px;
+}
+
+.nota-completa h3{
+    font-weight: 700;
+    font-size: 38px;
+    width: 526px;
+}
+
+.prev-articulos{
+    color: #002A54;
+    text-align: center;
+}
+
+.prev-articulos h4{
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.bienv-nota-1{
+    height: 450px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.2) 100%), url(img/banner_nota1.jpg) lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D9D9D9;
+}
+
+.bienv-nota-2{
+    height: 450px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.2) 100%), url(img/banner_nota2.jpg) lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D9D9D9;
+}
+
+.bienv-nota-3{
+    height: 450px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.2) 100%), url(img/banner_nota3.jpg) lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D9D9D9;
+}
+
+.fondo-nota{
+    background-color: #002A54;
+    padding: 40px 50px;
+    text-align: center;
+    border-radius: 2.19vw;
+}
+
+/*MAPA PAGE*/
+.bienvenida-mapas {
+    height: 717px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner-mapa.jpeg") lightgray 50% / cover no-repeat;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -621,9 +713,10 @@ footer li{
     border: 0px;
     border-radius: 30px;
     color: #002A54;
+    text-shadow: 3px 2px 0px #E52522;
 }
 .seccion-colectivo {
-    height: 300px;
+    height: 200px;
     background: #002A54;
     display: flex;
     align-items: center;
@@ -638,13 +731,16 @@ footer li{
     background-color: #D9D9D9;
     justify-content: space-between;
     gap: 100px;
+    height: 1158px;
 }
 #contenedor-lineas {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 800px;
     height: 800px;
+    margin-left: 380px;
+    margin-bottom: 150px;
 }
 .btn-group-vertical {
     display: flex;
@@ -663,14 +759,27 @@ footer li{
     border-color: #E52522;
     height: 80px;
     bottom: 20%;
+    width: 270px;
 }
 .btn-group-vertical>.btn~.btn {
     border-radius: 30px;
+    width: 270px;
 }
 .btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle) {
     border-radius: 30px;
 }
-
+label {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    gap: 50px;
+    color: #D9D9D9;
+    background-color: #E22522;
+    border-radius: 30px;
+}
 #contenedor-mapas {
     display: flex;
     flex-wrap: nowrap;
@@ -682,13 +791,21 @@ footer li{
     align-items: flex-end;
     transition: opacity 0.5s ease-in-out;
 }
+#contenedor-recorridos {
+    display: flex;
+}
 .separador-main {
     background-color: #002A54;
     height: 200px;
 }
+#img-id  {
+    margin-left: 460px;
+    vertical-align: middle;
+    margin-bottom: 60px;
+}
+
 
 /*------------------------FIN MAPAS-----------------------------------*/
-
 
 .mapa {
     width: 80%;
@@ -774,6 +891,9 @@ li{
         bottom: 80px;
         width: 95%;
     }
+    #infonosotros {
+        max-width: 37%;
+    }
     #img1{
         width: 55%;
         height: auto;
@@ -804,6 +924,7 @@ li{
     #navbotones{
         display: none;
     }
+    /*galeria*/
     .bienvenida-galeria {
         height: 280px;
     }
@@ -832,12 +953,42 @@ li{
         width: 20%;
     }
 
+    .show {
+        display: grid;
+        grid-template-columns: 100%;
+        width: fit-content;
+        justify-content: center;
+    }
+    
+    .info {
+        left: 0;
+        position: absolute;
+        bottom: auto;
+        width: 313px;
+    }
+
+    .grid-item:hover .info {
+        height: 223px;
+    }
+
+    .grid-item {
+        display: grid;
+        grid-template-columns: 100%;
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .grid-item img {
+        width: 313px;
+        height: 223px;
+    }
+
     body {
         width: 100vw;
     }
     /*dani---*/
     .text-content {
-        margin-bottom: 0px; 
+        margin-bottom: 10px; 
     }
     #logo {
         margin-top: 20px;
@@ -897,6 +1048,7 @@ li{
     }
         h4{
         font-size: 4vw;
+        width: 266px;
     }
     .descri{
         font-size: 3.5vw;
@@ -1009,8 +1161,34 @@ p {
         flex-direction: column;
         gap: 30px;
     }
+    #staticimage{
+        content: url(img/banner-index-600.jpg);
+    }
     .mobile{
         display: flex;
         margin-right: 20px;
+    }
+    .nota-completa{
+        padding: 54px 10% 70px 8%;
+    }
+    .nota-completa h3{
+        font-size: 20px;
+        width: 90%;
+    }
+    .bienv-nota-1, .bienv-nota-2, .bienv-nota-3{
+        height: 370px;
+    }
+    .fondo-nota{
+        width: 90%;
+    }
+    .autor{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 6.65vw;
+    }
+    .fondo-nota h3{
+        font-size: 4vw;
+        padding-top: 5px;
     }
 }
