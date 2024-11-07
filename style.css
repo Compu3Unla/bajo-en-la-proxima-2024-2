@@ -773,6 +773,9 @@ li{
     #enviar {
         font-size: 18px; 
     }
+    .formulario-sobre-imagen {
+        height: 75%;
+        }
 }
 
 @media screen and (max-width: 600px) {
