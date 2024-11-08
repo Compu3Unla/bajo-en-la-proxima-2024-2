@@ -274,12 +274,12 @@ span.button:active {
 }
 /*--------------*/
 /*blogindex*/
-#blogin{
+.blogin{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-#blogin2{
+.blogin2{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
@@ -408,7 +408,7 @@ a{
 legend {
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 700;
-    font-size: 50px;
+    font-size: 2.60vw;
     text-align: center;
     color: var(--hueso);
     text-shadow: 2px 2px 0 var(--celeste);
@@ -416,7 +416,7 @@ legend {
 .label2{
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 400;
-    font-size: 16px;
+    font-size: 1.1vw;
     color: var(--hueso);
     background-color: var(--azul);
 }
@@ -439,7 +439,7 @@ input{
     padding: 5px 2.19vw;
     background-color: var(--amarillo);
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 1.1vw;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight:600;
     border-bottom: 5px solid var(--rojo);
@@ -467,7 +467,6 @@ footer{
 footer ol{
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 400;
-    font-size: 20px;
     color: var(--hueso);
 }
 #interiorfooter{
@@ -498,7 +497,6 @@ footer li{
 /* MAIN */
 
 /*inicio galeria*/
-
 .bienvenida-galeria {
     height: 717px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_10.jpg") lightgray 50% / cover no-repeat;
@@ -514,7 +512,7 @@ footer li{
     flex-wrap: wrap;
     padding: 24px 43px;
     width: 80%;
-    background-color: #002A54;
+    background-color: var(--azul);
     border: 0px;
     border-radius: 30px;
     color: white;
@@ -547,21 +545,21 @@ footer li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #002A54;
+    background-color: var(--azul);
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 36px;
+    font-size: 2.6vw;
     color: white;
     padding: 16px 70px 16px 70px;
-    box-shadow: 0px 0px 0px 6px #FEB500;
+    box-shadow: 0px 0px 0px 6px var(--amarillo);
     border-radius: 20px;
     cursor: pointer;
 }
   
 .dropbtn:hover {
-    background-color: #002A54;
-    box-shadow: 5px 6px 0px 0px #002A54;
+    background-color: var(--azul);
+    box-shadow: 5px 6px 0px 0px var(--azul);
 }
 
 .dropdown {
@@ -573,7 +571,7 @@ footer li{
 .dropdown-content {
     display: none;
     position: relative;
-    background-color: #002A54;
+    background-color: var(--azul);
     z-index: 1;
 }
   
@@ -596,7 +594,7 @@ footer li{
     width: 413px;
     transition: .5s ease;
     color: white;
-    font-size: 20px;
+    font-size: 2.25vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -635,16 +633,16 @@ footer li{
 }
 
 .bienvenida-blog div {
-    color: var(--Amarillo, #FEB500);
+    color: var(--Amarillo);
     text-align: center;
-    text-shadow: 4px 2px 0px #E52522;
+    text-shadow: 4px 2px 0px var(--rojo);
     flex-direction: column;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 24px 43px;
     width: 1400px;
-    background-color: #002A54;
+    background-color: var(--azul);
     border: 0px;
     border-radius: 30px;
 }
@@ -658,8 +656,8 @@ footer li{
     gap: 111px 52px;
     flex-shrink: 0;
     flex-wrap: wrap;
-    color: #E9E9E9;
-    background-color: #E9E9E9;
+    color: var(--hueso);
+    background-color: var(--hueso);
 }
 
 .blog {
@@ -670,9 +668,12 @@ footer li{
 
 #blogpage{
     background-color: var(--hueso);
-    padding: 80px 40px;
+    padding: 80px 0px;
 }
-
+#blogpage2{ 
+    background-color: var(hueso);
+    padding: 0px 0px 100px 0px;
+}
 #blog img {
     width: 471.777px;
     height: 695.25px;
@@ -684,7 +685,7 @@ footer li{
 /*Notas page----------------------------------Anita*/
 
 .autor{
-    font-size: 24px;
+    font-size: 2.3vw;
     font-weight: 700;
     margin: 0%;
 }
@@ -694,7 +695,7 @@ footer li{
 }
 
 .nota-completa{
-    color: #002A54;
+    color: var(--azul);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -704,18 +705,18 @@ footer li{
 
 .nota-completa h3{
     font-weight: 700;
-    font-size: 38px;
+    /*font-size: 38px;*/
     width: 526px;
 }
 
 .prev-articulos{
-    color: #002A54;
+    color: var(--azul);
     text-align: center;
 }
 
 .prev-articulos h4{
     font-weight: 700;
-    font-size: 38px;
+    /*font-size: 38px;*/
 }
 
 .bienv-nota-1{
@@ -726,7 +727,7 @@ footer li{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: #D9D9D9;
+    color: var(--hueso);
 }
 
 .bienv-nota-2{
@@ -737,7 +738,7 @@ footer li{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: #D9D9D9;
+    color: var(--hueso);
 }
 
 .bienv-nota-3{
@@ -748,11 +749,11 @@ footer li{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    color: #D9D9D9;
+    color: var(--hueso);
 }
 
 .fondo-nota{
-    background-color: #002A54;
+    background-color: var(--azul);
     padding: 40px 50px;
     text-align: center;
     border-radius: 2.19vw;
@@ -772,25 +773,25 @@ footer li{
     flex-wrap: wrap;
     padding: 24px 43px;
     width: 700px;
-    background-color: #FEB500;
+    background-color: var(--amarillo);
     border: 0px;
     border-radius: 30px;
-    color: #002A54;
+    color: var(--azul);
 }
 .seccion-colectivo {
     height: 150px;
-    background: #002A54;
+    background: var(--azul);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FEB500;
+    color: var(--amarillo);
     margin: 0px;
 }
 
 #mapas {
     display: flex;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: var(--hueso);
     justify-content: space-between;
     gap: 100px;
     height: 700px;
@@ -815,11 +816,11 @@ footer li{
 }
 .btn-primary {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 40px;
-    color: #D9D9D9;
-    background-color: #E22522;
+    font-size: 2.9vw;
+    color: var(--hueso);
+    background-color: var(--rojo);
     border-radius: 30px;
-    border-color: #E52522;
+    border-color: var(--rojo);
     height: 60px;
     bottom: 20%;
     width: 220px;
@@ -834,164 +835,45 @@ footer li{
 }
 label {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 50px;
+    font-size: 2.60vw;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
     gap: 50px;
-    color: #D9D9D9;
-    background-color: #E22522;
+    color: var(--hueso);
+    background-color: var(--rojo);
     border-radius: 30px;
 }
+
 #contenedor-mapas {
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
 }
+
 #mapas {
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
     transition: opacity 0.5s ease-in-out;
 }
+
 #contenedor-recorridos {
     display: flex;
 }
+
 .separador-main {
-    background-color: #002A54;
+    background-color: var(--azul);
     height: 150px;
 }
+
 #img-id  {
     margin-left: 120px;
     vertical-align: middle;
     margin-top: 400px;
 }
 
-@media screen and (max-width: 600px) {
-    .bienvenida-mapas {
-        height: 50vw;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner_15 (1).jpg") lightgray 50% / cover no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .titulo-mapas {
-        font-size: 3vw;
-        font-family: "IBM Plex Sans", sans-serif;
-    }
-    h5 {
-        font-size: 2vw;
-        font-family: "IBM Plex Sans", sans-serif;
-    }
-    .bienvenida-mapas div {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 20px 40px;
-        width: 80vw;
-        height: 20vw;
-        background-color: #FEB500;
-        border: 0px;
-        border-radius: 30px;
-        color: #002A54;
-    }
-    .seccion-colectivo {
-        height: 13vw;
-        background: #002A54;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FEB500;
-        font-size: 4vw;
-        margin: 0px;
-    }
-    #mapas {
-        display: flex;
-        align-items: center;
-        background-color: #D9D9D9;
-        justify-content: space-between;
-        gap: 100px;
-        height: 1158px;
-    }
-    #contenedor-lineas {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 180vw;
-        margin-left: 2vw;
-        margin-top: 10vw;
-    }
-    .btn-group-vertical {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        justify-items: center;
-        gap: 5vw;
-        margin-left: 0vw;
-        margin-bottom: 30vw;
-    }
-    .btn-primary {
-        font-family: "IBM Plex Sans", sans-serif;
-        font-size: 4vw;
-        color: #D9D9D9;
-        background-color: #E22522;
-        border-radius: 30px;
-        border-color: #E52522;
-        height: 15vw;
-        bottom: 20%;
-        width: 15vw;
-    }
-    .btn-group-vertical>.btn~.btn {
-        border-radius: 30px;
-        width: 15vw;
-    }
-    .btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle) {
-        border-radius: 30px;
-        width: 15vw;
-    }
-    label {
-        font-family: "IBM Plex Sans", sans-serif;
-        font-size: 50px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-between;
-        gap: 50px;
-        color: #D9D9D9;
-        background-color: #E22522;
-        border-radius: 30px;
-    }
-    #contenedor-mapas {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-    }
-    #mapas {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-        transition: opacity 0.5s ease-in-out;
-        height: 103vw;
-    }
-    #contenedor-recorridos {
-        display: flex;
-    }
-    .separador-main {
-        background-color: #002A54;
-        height: 100px;
-    }
-    #img-id  {
-        margin-left: -365px;
-        vertical-align: middle;
-        margin-top: 675px;
-        height: 300px;
-        width: 375px;
-    }
-    
-}
-/*------------------------FIN MAPAS-----------------------------------*/
 
 .mapa {
     width: 80%;
@@ -999,10 +881,9 @@ label {
     margin: 20px auto;
 }
 
-ol{
+/*ol{
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 400;
-    font-size: 20px;
     color: var(--hueso);
 }
 li{
@@ -1012,39 +893,12 @@ li{
     display: flex;
     justify-content: space-between;
     gap: 2.19vw;
-}
+}*/
 /*nav ajustado para mobile*/
 .botonnav {
     display: block;
     cursor: pointer;
 }
-  
-.mobile {
-    display: none;
-}
-    
-.listanav {
-    background-color: var(--amarillo);
-    color: var(--azul);
-    border-bottom:5px solid var(--rojo);
-    padding: 5px 25px;
-    font-family: "IBM PlexSans";
-    font-size: 4vw;
-    border-radius: 15px;
-    cursor: pointer;
-}
-  
-.mostrarnav {
-    display: inline-grid;
-    grid-template-columns: 320px 320px 320px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-/*fin de nav mobile*/
-
 
 @media only screen and (max-width: 1366px){
     #logo{
@@ -1088,17 +942,17 @@ li{
         font-size: 18px;
         height: 40px;
     }
-    #enviar {
+    /*#enviar {
         font-size: 18px; 
         height: 55px;
         width: 110px;
-    }
+    }*/
     .formulario-sobre-imagen {
         height: 80%;
         width: 45%;
         padding: 25px;
     }
-    #blogin{
+    .blogin{
         gap: 0px;
     }
     .imgnotas{
@@ -1107,6 +961,12 @@ li{
     }
     #alosblogs{
         margin-top: 0px;
+    }
+    #blogpage{
+        padding: 60px 40px 1px;
+    }
+    #blogpage2{ 
+    padding: 0px 40px 70px;
     }
 
 }
@@ -1127,7 +987,7 @@ li{
     .bienvenida-galeria {
         height: 280px;
     }
-    .bienvenida-galeria h2 {
+    /*.bienvenida-galeria h2 {
         font-size: 30px;
     }
 
@@ -1137,11 +997,11 @@ li{
 
     .info h3 {
         font-size: 20px;
-    }
+    }*/
 
-    .info h4 {
+    /*.info h4 {
         font-size: 15px;
-    }
+    }*/
 
     .dropbtn {
         font-size: 18px;
@@ -1250,9 +1110,6 @@ li{
     width: 264px;
     width: 95%;
     }
-    .descri{
-        font-size: 3.5vw;
-    }
     #alosblogs{
         margin-top: 10px;
     }
@@ -1261,7 +1118,7 @@ li{
 #infomapain{
     width: 80%;
 }
-#blogin{
+.blogin{
     display: flex;
     flex-direction: column;
 }
@@ -1395,7 +1252,7 @@ p {
         padding: 54px 10% 70px 8%;
     }
     .nota-completa h3{
-        font-size: 20px;
+        /*font-size: 20px;*/
         width: 90%;
     }
     .bienv-nota-1, .bienv-nota-2, .bienv-nota-3{
@@ -1412,10 +1269,10 @@ p {
         text-align: center;
     }
     .fondo-nota h3{
-        font-size: 4vw;
+        /*font-size: 4vw;*/
         padding-top: 5px;
     }
-    #blogin2{
+    .blogin2{
         display: flex;
         flex-direction: column;
     }
@@ -1434,4 +1291,108 @@ p {
         display: flex;
         margin-right: 40px;
     }
+    .bienvenida-mapas {
+        height: 50vw;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("img/banner-mapa.jpeg") lightgray 50% / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo-mapas {
+        font-size: 3vw;
+        font-family: "IBM Plex Sans", sans-serif;
+    }
+    .bienvenida-mapas div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 40px;
+        width: 80vw;
+        height: 20vw;
+        border: 0px;
+        border-radius: 30px;
+    }
+    .seccion-colectivo {
+        height: 13vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vw;
+        margin: 0px;
+    }
+    #mapas {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        height: 1158px;
+    }
+    #contenedor-lineas {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 180vw;
+        margin-left: 2vw;
+        margin-top: 10vw;
+    }
+    .btn-group-vertical {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        justify-items: center;
+        gap: 5vw;
+        margin-left: 0vw;
+        margin-bottom: 30vw;
+    }
+    .btn-primary {
+        font-size: 4vw;
+        border-radius: 30px;
+        height: 15vw;
+        bottom: 20%;
+        width: 15vw;
+    }
+    .btn-group-vertical>.btn~.btn {
+        border-radius: 30px;
+        width: 15vw;
+    }
+    .btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle) {
+        border-radius: 30px;
+        width: 15vw;
+    }
+    label {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        gap: 50px;
+        border-radius: 30px;
+    }
+    #contenedor-mapas {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    } 
+    /*#m {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        transition: opacity 0.5s ease-in-out;
+        height: 103vw;
+    }*/
+    #contenedor-recorridos {
+        display: flex;
+    }
+    .separador-main {
+        height: 100px;
+    }
+    #img-id  {
+        margin-left: -365px;
+        vertical-align: middle;
+        margin-top: 675px;
+        height: 300px;
+        width: 375px;
+    }
+        
 }
