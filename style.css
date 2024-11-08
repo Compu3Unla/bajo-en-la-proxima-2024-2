@@ -55,7 +55,6 @@ nav{
     width: 100%;
     height: 8.12vw;
 }
-
 #navbotones{
     display: flex;
     justify-content: space-evenly;
@@ -86,6 +85,45 @@ span.button:hover {
 span.button:active {
     transform: translateY(2px);
     border-bottom: 5px solid var(--rojo);
+}
+.dropdown2 {
+    position: relative;
+    display: none; 
+}
+
+
+.dropdown-button2 {
+    display: inline-block;
+    color: var(--azul);
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: var(--amarillo);
+    box-sizing: border-box;
+    font-size: 4vw;
+    border: none;
+    border-bottom:1vw solid var(--rojo);
+}
+.dropdown2:focus-within .dropdown-content2 {
+    display: block;
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: var(--amarillo);
+    border-bottom:1vw solid var(--rojo);
+    z-index: 2;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 90px 10px 20px 10px;
+    justify-items: center;
+}
+.dropdown-content2 a {
+    color: var(--azul);
+    font-family: "IBM Plex Sans";
+    padding: 15px;
+    font-size: 4vw;
+    text-decoration: none;
+    display: block;
 }
 /*Daniiiiiiiiiiiii indexxxxxxxxxxxxxxxxxxxxxxx*/
 .container {
@@ -364,7 +402,7 @@ a{
     background-color: var(--azul);
     padding: 50px ;
     border-radius: 2.19vw;
-    width: 40%;
+    width: 35%;
     height: 60%;
 }
 legend {
@@ -868,7 +906,6 @@ label {
         font-size: 4vw;
         margin: 0px;
     }
-    
     #mapas {
         display: flex;
         align-items: center;
@@ -986,7 +1023,7 @@ li{
     display: none;
 }
     
-.listanav2 {
+.listanav {
     background-color: var(--amarillo);
     color: var(--azul);
     border-bottom:5px solid var(--rojo);
@@ -1054,10 +1091,11 @@ li{
     #enviar {
         font-size: 18px; 
         height: 55px;
+        width: 110px;
     }
     .formulario-sobre-imagen {
-        height: 75%;
-        width: 50%;
+        height: 80%;
+        width: 45%;
         padding: 25px;
     }
     #blogin{
@@ -1067,6 +1105,10 @@ li{
         width: 95%;
         height: auto;
     }
+    #alosblogs{
+        margin-top: 0px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1075,7 +1117,6 @@ li{
         height: 50%;
         margin-top: 0px;
     }
-
     nav{
         height: 50px;
     }
@@ -1242,7 +1283,7 @@ h3 {
     font-size: 5vw; 
 }
 p {
-    font-size: 3vw; 
+    font-size: 4vw; 
 }
 #img {
     display: flex;
@@ -1266,9 +1307,12 @@ p {
     legend {
         font-size: 24px; 
     }
-    label, 
+    label{
+        font-size: 16px;
+    } 
     #enviar {
         font-size: 16px; 
+        width: 70px;
     }
     #redessociales {
         justify-content: center; 
@@ -1384,5 +1428,10 @@ p {
     }
     footer li{
         font-size: 4vw;
+        text-align: center;
+    }
+    .dropdown2 {
+        display: flex;
+        margin-right: 40px;
     }
 }
