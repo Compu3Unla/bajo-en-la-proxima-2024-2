@@ -15,9 +15,16 @@ hoverVideo.addEventListener("mouseout", function() {
 });
 
 // nav mobile
-document.querySelector('.listanav2').addEventListener('click', function() {
-  const menu = document.querySelector('.mostrar');
-  menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.querySelector('.listanav2');
+  if (button) {
+    button.addEventListener('click', function() {
+      const menu = document.querySelector('.mostrar');
+      if (menu) {
+        menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+      }
+    });
+  }
 });
 
   //galeria
