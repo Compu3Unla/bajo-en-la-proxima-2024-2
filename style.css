@@ -1262,6 +1262,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 10px;
     }
     .botonmapa{
         font-size: 4vw;
