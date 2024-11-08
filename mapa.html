@@ -36,8 +36,8 @@
         <main>
             <section class="bienvenida-mapas">
                 <div>
-                    <h3 class="titulo-mapas">¿A dónde nos llevaba este bondi?</h3>
-                    <h5>Conoce los trayectos clásicos de las líneas más conocidas. </h5>
+                    <h2 class="titulo-mapas">¿A dónde nos llevaba este bondi?</h2>
+                    <h4>Conoce los trayectos clásicos de las líneas más conocidas. </h4>
                 </div>
             </section>
             <section>
@@ -45,21 +45,24 @@
                     <h3 class="seccion-colectivo">Buenos Aires</h3>
                 </div>
             </section>
-            <section>
-                <article id="mapas">
-                    <div id="contenedor-lineas">
-                        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                            <button onClick="linea33()" type="button" class="btn btn-primary">Línea 33</button>
-                            <button onClick="linea37()" type="button" class="btn btn-primary">Línea 37</button>
-                            <button onClick="linea60()" type="button" class="btn btn-primary">Línea 60</button>
-                            <button onClick="linea79()" type="button" class="btn btn-primary">Línea 79</button>
-                            <button onClick="linea160()" type="button" class="btn btn-primary">Línea 160</button>
-                        </div>
-                        <div id="contenedor-recorridos">
-                            <img id="img-id" src="img/mapa-33.jpeg" width="898px" height="700px" alt="Mapa linea 33">
-                        </div>
+            <section id="mapasbien">
+                <div id="gallery-section">
+                    <div class="button-container">
+                        <button class="botonmapa" onclick="showImage(1)">Línea 33</button>
+                        <button class="botonmapa" onclick="showImage(2)">Línea 37</button>
+                        <button class="botonmapa" onclick="showImage(3)">Línea 60</button>
+                        <button class="botonmapa" onclick="showImage(4)">Línea 79</button>
+                        <button class="botonmapa" onclick="showImage(5)">Línea 160</button>
                     </div>
-                </article>
+
+                    <div class="image-container">
+                        <img id="image1" src="img/mapa-33.jpeg" alt="Imagen 1" class="gallery-image">
+                        <img id="image2" src="img/mapa-37.jpeg" alt="Imagen 2" class="gallery-image" style="display: none;">
+                        <img id="image3" src="img/mapa-60.jpeg" alt="Imagen 3" class="gallery-image" style="display: none;">
+                        <img id="image4" src="img/mapa-79.jpg" alt="Imagen 4" class="gallery-image" style="display: none;">
+                        <img id="image5" src="img/mapa-160.pjg" alt="Imagen 5" class="gallery-image" style="display: none;">
+                    </div>
+                </div>
             </section>
             <section class="separador-main"></section>
         </main>

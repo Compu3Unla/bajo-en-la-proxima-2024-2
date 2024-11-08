@@ -1,29 +1,8 @@
 // mapas pages
-var myImage=document.querySelector("#img-id");
-
-function linea33()
-{
-  myImage.src="img/mapa-33.png";
-}
-
-function linea37()
-{
-  myImage.src="img/mapa-37.png";
-}
-
-function linea60()
-{
-  myImage.src="img/mapa-60.png";
-}
-
-function linea79()
-{
-  myImage.src="img/mapa-79.png";
-}
-
-function linea160()
-{
-  myImage.src="img/mapa-160.png";
+function showImage(imageNumber) {
+  const images = document.querySelectorAll('.gallery-image');
+  images.forEach(image => image.style.display = 'none');
+  document.getElementById(`image${imageNumber}`).style.display = 'block';
 }
 
 // index
