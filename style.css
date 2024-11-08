@@ -715,7 +715,6 @@ footer li{
     border: 0px;
     border-radius: 30px;
     color: #002A54;
-    text-shadow: 3px 2px 0px #E52522;
 }
 .seccion-colectivo {
     height: 200px;
@@ -830,7 +829,6 @@ label {
         border: 0px;
         border-radius: 30px;
         color: #002A54;
-        text-shadow: 3px 2px 0px #E52522;
     }
     .seccion-colectivo {
         height: 15vw;
@@ -1035,6 +1033,14 @@ li{
     .formulario-sobre-imagen {
         height: 75%;
         width: 50%;
+        padding: 25px;
+    }
+    #blogin{
+        gap: 0px;
+    }
+    .imgnotas{
+        width: 95%;
+        height: auto;
     }
 }
 
@@ -1173,9 +1179,9 @@ li{
         font-size: 3.5vw;
         padding: 8px 16px;
     }
-        h4{
-        font-size: 4vw;
-        width: 266px;
+    h4{
+    font-size: 4vw;
+    width: 264px;
     }
     .descri{
         font-size: 3.5vw;
@@ -1190,7 +1196,8 @@ li{
     flex-direction: column;
 }
 .infonotaindex{
-    bottom: 210px;
+    bottom: 45px;
+    padding: 25px;
 }
 /**/
 #historianosotros {
@@ -1294,6 +1301,23 @@ p {
     .mobile{
         display: flex;
         margin-right: 20px;
+    }
+    .carousel-control-next{ 
+        content: url(img/flecha\ der.svg);
+        opacity: 1;
+        top: 110px;
+        width: 15%;
+        left: 300px;
+    }
+    .carousel-control-prev { 
+        content: url(img/flecha\ izq.svg);
+        opacity: 1;
+        top: 110px;
+        width: 15%;
+        left: -14px;
+    }
+    label{
+        height: 30px; 
     }
     .nota-completa{
         padding: 54px 10% 70px 8%;
