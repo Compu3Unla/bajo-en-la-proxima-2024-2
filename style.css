@@ -41,6 +41,7 @@ p {
 
 body {
     cursor: url(img/cursor.svg),auto;
+    margin: 0px;
 }
 
 
@@ -52,7 +53,6 @@ nav{
     align-items: center;
     padding: 0% 5% ;
     background-color: var(--azul);
-    width: 100%;
     height: 8.12vw;
 }
 #navbotones{
@@ -1136,7 +1136,7 @@ p {
         height: 370px;
     }
     .fondo-nota{
-        width: 90%;
+        width: 64%;
     }
     .autor{
         font-size: 15px;
