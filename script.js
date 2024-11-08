@@ -1,3 +1,31 @@
+// mapas pages
+var myImage=document.querySelector("#img-id");
+
+function linea33()
+{
+  myImage.src="img/mapa-33.png";
+}
+
+function linea37()
+{
+  myImage.src="img/mapa-37.png";
+}
+
+function linea60()
+{
+  myImage.src="img/mapa-60.png";
+}
+
+function linea79()
+{
+  myImage.src="img/mapa-79.png";
+}
+
+function linea160()
+{
+  myImage.src="img/mapa-160.png";
+}
+
 // index
 const staticImage = document.getElementById("staticimage");
 const hoverVideo = document.getElementById("alvideo");
@@ -85,30 +113,3 @@ element.addEventListener("click", function () {
   element.classList.toggle("back");
 });
 
-// mapas pages
-var myImage=document.querySelector("#img-id");
-
-function linea33()
-{
-  myImage.src="img/mapa-33.png";
-}
-
-function linea37()
-{
-  myImage.src="img/mapa-37.png";
-}
-
-function linea60()
-{
-  myImage.src="img/mapa-60.png";
-}
-
-function linea79()
-{
-  myImage.src="img/mapa-79.png";
-}
-
-function linea160()
-{
-  myImage.src="img/mapa-160.png";
-}

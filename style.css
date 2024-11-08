@@ -633,7 +633,7 @@ footer li{
 }
 
 .bienvenida-blog div {
-    color: var(--Amarillo);
+    color: var(--amarillo);
     text-align: center;
     text-shadow: 4px 2px 0px var(--rojo);
     flex-direction: column;
@@ -671,7 +671,7 @@ footer li{
     padding: 80px 0px;
 }
 #blogpage2{ 
-    background-color: var(hueso);
+    background-color: var(--hueso);
     padding: 0px 0px 100px 0px;
 }
 #blog img {
@@ -1325,7 +1325,7 @@ p {
         align-items: center;
         justify-content: space-between;
         gap: 100px;
-        height: 1158px;
+        height: 378px;
     }
     #contenedor-lineas {
         display: flex;
@@ -1343,7 +1343,7 @@ p {
         justify-items: center;
         gap: 5vw;
         margin-left: 0vw;
-        margin-bottom: 30vw;
+        margin-bottom: 157vw;
     }
     .btn-primary {
         font-size: 4vw;
@@ -1390,7 +1390,7 @@ p {
     #img-id  {
         margin-left: -365px;
         vertical-align: middle;
-        margin-top: 675px;
+        margin-top: 187px;
         height: 300px;
         width: 375px;
     }
