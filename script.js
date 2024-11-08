@@ -96,17 +96,17 @@ var myImage=document.querySelector("#img-id");
 
 function linea33()
 {
-  myImage.src="img/mapa-33.jpeg"
+  myImage.src="img/mapa-33.png"
 }
 
 function linea37()
 {
-  myImage.src="img/mapa-37.jpeg"
+  myImage.src="img/mapa-37.png"
 }
 
 function linea60()
 {
-  myImage.src="img/mapa-60.jpeg"
+  myImage.src="img/mapa-60.png"
 }
 
 function linea79()
