@@ -378,8 +378,9 @@ legend {
 .label2{
     font-family: "IBM Plex Sans", sans-serif;
 	font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--hueso);
+    background-color: var(--azul);
 }
 input{
     font-family: "IBM Plex Sans", sans-serif;
@@ -441,6 +442,7 @@ footer ol{
 }
 footer li{
     list-style-type: none;
+    font-size: 1.1vw;
 }
 #redessociales{
     display: flex;
@@ -820,7 +822,7 @@ label {
 }
 .separador-main {
     background-color: #002A54;
-    height: 200px;
+    height: 150px;
 }
 #img-id  {
     margin-left: 120px;
@@ -836,26 +838,28 @@ label {
         align-items: center;
         justify-content: center;
     }
-    h2 {
+    .titulo-mapas {
         font-size: 3vw;
-        text-align: justify;
+        font-family: "IBM Plex Sans", sans-serif;
     }
-    h4 {
+    h5 {
         font-size: 2vw;
+        font-family: "IBM Plex Sans", sans-serif;
     }
     .bienvenida-mapas div {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 24px 43px;
-        width: 75vw;
+        padding: 20px 40px;
+        width: 80vw;
+        height: 20vw;
         background-color: #FEB500;
         border: 0px;
         border-radius: 30px;
         color: #002A54;
     }
     .seccion-colectivo {
-        height: 15vw;
+        height: 13vw;
         background: #002A54;
         display: flex;
         align-items: center;
@@ -889,7 +893,7 @@ label {
         justify-items: center;
         gap: 5vw;
         margin-left: 0vw;
-        margin-bottom: 132vw;
+        margin-bottom: 30vw;
     }
     .btn-primary {
         font-family: "IBM Plex Sans", sans-serif;
@@ -932,23 +936,26 @@ label {
         flex-wrap: nowrap;
         align-items: flex-end;
         transition: opacity 0.5s ease-in-out;
+        height: 103vw;
     }
     #contenedor-recorridos {
         display: flex;
     }
     .separador-main {
         background-color: #002A54;
-        height: 200px;
+        height: 100px;
     }
     #img-id  {
-        margin-left: 460px;
+        margin-left: -365px;
         vertical-align: middle;
-        margin-bottom: 60px;
+        margin-top: 675px;
+        height: 300px;
+        width: 375px;
     }
     
 }
 /*------------------------FIN MAPAS-----------------------------------*/
- 
+
 .mapa {
     width: 80%;
     height: 400px;
@@ -970,12 +977,17 @@ li{
     justify-content: space-between;
     gap: 2.19vw;
 }
-.dropdownmobile{
-    position: relative;
-    display: inline-block;
+/*nav ajustado para mobile*/
+.botonnav {
+    display: block;
+    cursor: pointer;
+}
+  
+.mobile {
     display: none;
 }
-.dropdown-buttonlistanav2{
+    
+.listanav2 {
     background-color: var(--amarillo);
     color: var(--azul);
     border-bottom:5px solid var(--rojo);
@@ -984,27 +996,19 @@ li{
     font-size: 4vw;
     border-radius: 15px;
     cursor: pointer;
-    
 }
-.dropdown-contentmostrar{
-    display: none;
-    flex-direction:column;
+  
+.mostrarnav {
+    display: inline-grid;
+    grid-template-columns: 320px 320px 320px;
+    width: 100%;
     align-items: center;
-    position: absolute;
-    background-color: var(--amarillo);
-    z-index: 2;
+    justify-content: center;
     gap: 20px;
-    border-radius: 15px;
-    padding: 90px 10px 20px 10px;
+    padding: 20px;
 }
-.dropdown-contentmostrar a{
-    color: var(--azul);
-    padding: 15px;
-    font-family: "IBM Plex Sans";
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-}
+/*fin de nav mobile*/
+
 
 @media only screen and (max-width: 1366px){
     #logo{
@@ -1195,7 +1199,7 @@ li{
     }
     .indexnota {
         width: 100%;
-        height: 475px;
+        height: 380px;
     }
     .botonablog {
         font-size: 3.5vw;
@@ -1204,9 +1208,13 @@ li{
     h4{
     font-size: 4vw;
     width: 264px;
+    width: 95%;
     }
     .descri{
         font-size: 3.5vw;
+    }
+    #alosblogs{
+        margin-top: 10px;
     }
 /*----------------------------------------------------------------*/
 /**/
@@ -1218,7 +1226,7 @@ li{
     flex-direction: column;
 }
 .infonotaindex{
-    bottom: 45px;
+    bottom: 30px;
     padding: 25px;
 }
 /**/
@@ -1320,9 +1328,8 @@ p {
     #staticimage{
         content: url(img/banner-index-600.jpg);
     }
-    .dropdownmobile{
-        display: flex;
-        margin-right: 20px;
+    .mobile {
+        display: block;
     }
     .carousel-control-next{ 
         content: url(img/flecha\ der.svg);

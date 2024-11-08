@@ -15,17 +15,10 @@ hoverVideo.addEventListener("mouseout", function() {
 });
 
 // nav mobile
-document.addEventListener('DOMContentLoaded', function() {
-  const button = document.querySelector('.listanav2');
-  if (button) {
-    button.addEventListener('click', function() {
-      const menu = document.querySelector('.mostrar');
-      if (menu) {
-        menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
-      }
-    });
-  }
-});
+function nav() {
+  const navMenu = document.getElementById("navabierto");
+  navMenu.classList.toggle("mostrarnav");
+}
 
   //galeria
   function dropdown() {
